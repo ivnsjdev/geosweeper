@@ -2,7 +2,7 @@
 
 **Datum des Inkrafttretens:** 26. September 2026
 
-**Letzte Aktualisierung:** 26. September 2026
+**Letzte Aktualisierung:** 4. Oktober 2026
 
 ## Die Kurzversion
 
@@ -21,7 +21,9 @@ Alles unten befindet sich nur auf Ihrem Gerät, an einem von drei Orten: „User
 | Display settings — board theme, neon color, explosion effect, blast sound, map projection (globe or flat), sound and haptics on/off | `UserDefaults` | Nein |
 | Language, das Sie in der App ausgewählt haben | `UserDefaults` | Nein |
 | Verwaltung der Bewertungsanfrage – die Daten, an denen GeoSweeper iOS gebeten hat, die native Bewertungsabfrage anzuzeigen, und welcher Meilenstein die letzte ausgelöst hat | `UserDefaults` | Nein |
+| Zähler für Gratisspiele – wie viele Ihrer 10 kostenlosen Kartenländer und Ihrer 10 kostenlosen **Classic**-Spiele Sie verbraucht haben | `UserDefaults` | Nein |
 | Rekord pro Land – Siege, Niederlagen, Bestzeit und wann Sie ihn freigeschaltet haben, für jedes Land, in dem Sie gespielt haben | A JSON file (`progress.json`) in the app's Application Support folder | Nein |
+| **Classic**-Verlauf – die Brettgröße, der Schwierigkeitsgrad, die Anzahl der Minen, die Zeit und Sieg oder Niederlage jedes abgeschlossenen Classic-Spiels | Eine JSON-Datei (`Classic/history.json`) im Application Support-Ordner der App | Nein |
 | Infinite Tower Fortschritt – die Zeile, die Sie erreicht haben, Ihr gespeichertes Ansichtsfenster und welche Zeilen Sie gelöscht haben | Eine lokale SQLite-Datenbank | Nein |
 
 Nichts davon wird an Dritte weitergegeben oder verkauft, auch nicht an uns. Der eigene Datenverkehr von StoreKit (siehe unten) und die externen Links, auf die Sie tippen (ebenfalls unten), übertragen nichts davon. Eine iOS-Gerätesicherung kann diese Dateien als Teil der Sicherung der App als Ganzes enthalten – diese Sicherung wird von Ihnen oder von iOS initiiert, niemals von GeoSweeper, und sie verbleibt dort, wo Sie sie senden (iCloud oder Ihr Computer), nicht bei uns.
@@ -32,7 +34,7 @@ GeoSweeper fragt niemals nach einem Namen, einer E-Mail-Adresse, einer Telefonnu
 
 ## Alles wurde absichtlich nicht beharrt
 
-Das Spielfeld, auf dem Sie sich befinden – jedes geöffnete Plättchen, jede platzierte Flagge – wird nur gespeichert, während Sie spielen. Wenn Sie die App mitten im Spiel schließen, ist das Spielbrett verschwunden. Es wird nie auf die Festplatte geschrieben und es gibt keine automatische Speicherung, um ein unvollendetes Board fortzusetzen. Nur ein *abgeschlossenes* Spiel (ein Sieg oder eine Niederlage) aktualisiert den oben beschriebenen Länderrekord.
+Das Spielfeld, auf dem Sie sich befinden – jedes geöffnete Plättchen, jede platzierte Flagge – wird nur im Arbeitsspeicher gehalten, während Sie spielen. Das gilt in allen drei Welten: der Karte, dem **Classic**-Modus und **Infinite Tower**. Wenn Sie die App mitten im Spiel schließen, ist das Spielbrett verschwunden. Es wird nie auf die Festplatte geschrieben und es gibt keine automatische Speicherung, um ein unvollendetes Board fortzusetzen. Nur ein *abgeschlossenes* Spiel (ein Sieg oder eine Niederlage) aktualisiert den oben beschriebenen Länderrekord oder den Classic-Verlauf.
 
 ## Das Einzige, was sich anhört, als wäre es nicht lokal
 
@@ -44,9 +46,10 @@ GeoSweeper fordert überhaupt keine Systemberechtigungen an. Es wird niemals nac
 
 ## Einkäufe
 
-GeoSweeper kann kostenlos heruntergeladen werden. Ihre ersten 10 Länder – jede Stufe, einschließlich Beginner – können kostenlos gespielt werden, und sobald Sie ein Land gespielt haben, bleibt es dauerhaft wiederspielbar, auch nach Ablauf der kostenlosen Testversion. Infinite Tower ist bis Zeile 10 kostenlos. Über diese beiden Punkte hinaus gibt es zwei unabhängige Käufe, beide einmalig, nicht verbrauchbar, über Apples StoreKit angeboten und vollständig von Apple abgewickelt:
+GeoSweeper kann kostenlos heruntergeladen werden, und jede seiner drei Welten hat ihre eigene kostenlose Testversion. Ihre ersten 10 Länder auf der Karte – jede Stufe, einschließlich Beginner – können kostenlos gespielt werden, und sobald Sie ein Land gespielt haben, bleibt es dauerhaft wiederspielbar, auch nach Ablauf dieser Testversion. Der **Classic**-Modus gibt Ihnen auf dieselbe Weise 10 kostenlose Spiele. Infinite Tower ist bis Zeile 10 kostenlos. Über diese Punkte hinaus gibt es drei unabhängige Käufe, alle einmalig, nicht verbrauchbar, über Apples StoreKit angeboten und vollständig von Apple abgewickelt:
 
 - **All Countries** – ein einmaliger, nicht verbrauchbarer Kauf, der die Stufen Intermediate, Expert und Mega in allen 204 Ländern dauerhaft freischaltet. Daran ändert sich nichts.
+- **Classic Lifetime** – ein einmaliger, nicht verbrauchbarer Kauf, der unbegrenzte Classic-Spiele dauerhaft freischaltet, sobald Ihre 10 kostenlosen aufgebraucht sind. Daran ändert sich nichts.
 - **Infinite Tower Lifetime** – ein einmaliger, nicht verbrauchbarer Kauf, der das Weiterklettern über Zeile 10 hinaus dauerhaft freischaltet. Auch das wird nicht verlängert, und GeoSweeper bietet keinerlei Abonnement an.
 
 Apple, nicht GeoSweeper, verarbeitet jede Zahlung. Keine Kartennummer, Rechnungsadresse oder Apple Account-Anmeldeinformation ist für uns jemals sichtbar – StoreKit teilt der App nur mit, was sie benötigt, um eine Paywall anzuzeigen und Zugriff zu gewähren: den anzuzeigenden Preis und ob Sie derzeit jeden Artikel besitzen. Diese Antworten bleiben auf Ihrem Gerät; GeoSweeper betreibt keinen eigenen Kaufserver und kann sie nirgendwohin senden. Bei der Wiederherstellung von Einkäufen wird Apple aufgefordert, den Besitz Ihres Apple Account erneut zu bestätigen, und die Antwort wird lokal angewendet – es werden keine neuen Datensätze erstellt oder übertragen.
@@ -79,7 +82,7 @@ Dies entspricht dem Etikett „Data Not Collected (keine Daten erfasst)“, das 
 
 ## Aufbewahrung und Löschung
 
-Durch das Löschen der App werden alle auf Ihrem Gerät gespeicherten Dateien – Einstellungen, Ihr länderspezifischer Datensatz und Ihr Infinite Tower-Fortschritt – sofort und vollständig gelöscht, da es nie eine Serverkopie gab, die wir behalten oder löschen konnten. An iCloud device backup made before deletion may still contain a copy; Dieses Backup unterliegt vollständig Ihrer Kontrolle über **Settings → Ihr Name → iCloud → Kontospeicher verwalten** auf Ihrem Gerät. Support-E-Mails werden wie oben beschrieben separat aufbewahrt und gelöscht.
+Durch das Löschen der App werden alle auf Ihrem Gerät gespeicherten Dateien – Einstellungen, Ihr länderspezifischer Datensatz, Ihr Classic-Verlauf und Ihr Infinite Tower-Fortschritt – sofort und vollständig gelöscht, da es nie eine Serverkopie gab, die wir behalten oder löschen konnten. An iCloud device backup made before deletion may still contain a copy; Dieses Backup unterliegt vollständig Ihrer Kontrolle über **Settings → Ihr Name → iCloud → Kontospeicher verwalten** auf Ihrem Gerät. Support-E-Mails werden wie oben beschrieben separat aufbewahrt und gelöscht.
 
 ## Ihre Rechte
 

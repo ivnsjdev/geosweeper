@@ -1,10 +1,11 @@
 # Support för GeoSweeper
 
-**Senast uppdaterad:** 26 september 2026
+**Senast uppdaterad:** 4 oktober 2026
 
 GeoSweeper är klassisk minröjning spelad på brädor skurna till den verkliga formen av 204
-länder, plus ett andra, oändligt läge som kallas Infinite Tower. Appen fungerar helt offline,
-sparar dina framsteg enbart på din enhet, och kräver inget konto och ingen personlig
+länder, plus två världar till: Classic-läget, fri minröjning på vilken brädstorlek och
+svårighetsgrad som helst, och Infinite Tower, en oändlig klättring. Appen fungerar helt
+offline, sparar dina framsteg enbart på din enhet, och kräver inget konto och ingen personlig
 information — se [Integritetspolicyn](../../privacy/sv/) för alla detaljer.
 
 <a id="contact"></a>
@@ -22,10 +23,13 @@ användbart svar direkt, inkludera gärna:
 
 ### Vad ingår
 
-GeoSweeper har två världar. **Globe** är 204 länder, där varje land är en minröjningsbräde
+GeoSweeper har tre världar. **Globe** är 204 länder, där varje land är en minröjningsbräde
 skuren till landets verkliga kontur, indelade i fyra storleksbaserade nivåer: **Beginner**,
-**Intermediate**, **Expert** och **Mega**. **Infinite Tower** är en andra, separat värld: en
-oändlig klättring, en rad i taget, utan karta. Settings omfattar brädtema (**Country
+**Intermediate**, **Expert** och **Mega**. **Classic** är en andra värld: fri minröjning på
+ett enkelt rektangulärt bräde, där du själv väljer brädstorlek och en av fem svårighetsgrader,
+**Easy** till **Insane**, med en **History** över dina avslutade spel. **Infinite Tower** är
+en tredje, separat värld: en oändlig klättring, en rad i taget, utan karta. Settings omfattar
+brädtema (**Country
 themes**, **Classic** eller **Neon**), kartstil (**Globe** eller **Flat**), explosionseffekt
 (**Shockwave**, **Embers** eller **Chain**), smällljud, ljud och haptik, samt ditt
 visningsspråk. **Your Record** visar vinster, förluster, vinstandel och bästa tider, per
@@ -39,17 +43,24 @@ läge.
 
 ### Vad kostar det?
 
-De första 10 länderna du spelar, från vilken nivå som helst inklusive Beginner, är gratis —
-och när du väl har spelat ett land förblir det spelbart för gott, även efter att den gratis
-provperioden är förbrukad. Infinite Towers första 10 rader är också gratis. Allt utöver
-dessa två gränser är ett separat engångsköp — inget i GeoSweeper förnyas eller debiteras
-automatiskt, och ingenting du inte har köpt debiteras någonsin utan en köpbekräftelse från
-Apple först.
+Var och en av de tre världarna har sin egen gratis provperiod. De första 10 länderna du
+spelar, från vilken nivå som helst inklusive Beginner, är gratis — och när du väl har spelat
+ett land förblir det spelbart för gott, även efter att den provperioden är förbrukad.
+Classic-läget ger dig 10 gratis spel på samma sätt. Infinite Towers första 10 rader är också
+gratis. Allt utöver dessa gränser är ett separat engångsköp — inget i GeoSweeper förnyas
+eller debiteras automatiskt, och ingenting du inte har köpt debiteras någonsin utan en
+köpbekräftelse från Apple först.
 
 ### Lås upp resten av kartan
 
 **All Countries** är ett enda engångsköp som permanent låser upp nivåerna Intermediate,
 Expert och Mega för varje land. Det förnyas inte och är ingen prenumeration — du köper det
+en gång och det är ditt.
+
+### Lås upp Classic-läget
+
+**Classic Lifetime** är ett enda engångsköp som permanent låser upp obegränsade Classic-spel
+när dina 10 gratis är förbrukade. Det förnyas inte och är ingen prenumeration — du köper det
 en gång och det är ditt.
 
 ### Lås upp Infinite Tower
@@ -97,6 +108,16 @@ Nivån (Beginner, Intermediate, Expert eller Mega) bestäms av landets storlek, 
 Nästan varje bräde kontrolleras av en lösare så att det kan klaras med enbart logik, och
 ditt första tryck öppnar alltid säker mark — en mina väntar aldrig under det.
 
+### Så fungerar Classic-läget
+
+Classic är ren minröjning, spelad på ditt sätt. Du anger själv brädets bredd och höjd och
+väljer en av fem svårighetsgrader — **Easy**, **Medium**, **Hard**, **Expert** eller
+**Insane** — som avgör hur tätt brädet är minerat. Precis som på kartan byggs varje bräde för
+att kunna klaras med enbart logik, och ditt första tryck öppnar alltid säker mark. **History**
+behåller storleken, svårighetsgraden, tiden och resultatet för varje avslutat spel, lagrat
+enbart på din enhet. Dina första 10 Classic-spel är gratis; **Classic Lifetime** låser upp
+obegränsat spel efter det.
+
 ### Så fungerar Infinite Tower egentligen
 
 Öppna varje säker ruta i en rad för att låsa upp raden ovanför; träffa en mina och den raden
@@ -108,9 +129,9 @@ sparas efter varje rad, så att stänga appen kostar dig aldrig framsteg du reda
 ### Vart tog datan vägen
 
 Brädet du aktivt löser — varje ruta och flagga — finns bara i minnet medan du är kvar på
-det. Stäng appen mitt i ett bräde och det brädet är borta för gott; bara en avslutad vinst
-eller förlust sparas till ditt rekord. Det finns ingen ångra-funktion och ingen
-autosparfunktion mitt i ett bräde, med avsikt.
+det, i alla tre världarna. Stäng appen mitt i ett bräde och det brädet är borta för gott;
+bara en avslutad vinst eller förlust sparas till ditt rekord eller Classic-historiken. Det
+finns ingen ångra-funktion och ingen autosparfunktion mitt i ett bräde, med avsikt.
 
 ### Inställningar och tillgänglighet
 
@@ -122,9 +143,9 @@ medvetet separat från enhetens systemspråk: när du väl har valt ett språk f
 
 ### Ominstallation och dataförlust
 
-Att radera GeoSweeper raderar dina inställningar, ditt rekord per land och dina Infinite
-Tower-framsteg från den enheten — det finns ingen serverkopia att återställa från
-efteråt. Köp är undantaget: de är kopplade till ditt Apple-konto och kommer tillbaka med
+Att radera GeoSweeper raderar dina inställningar, ditt rekord per land, din
+Classic-lägeshistorik och dina Infinite Tower-framsteg från den enheten — det finns ingen
+serverkopia att återställa från efteråt. Köp är undantaget: de är kopplade till ditt Apple-konto och kommer tillbaka med
 **Restore Purchases** på vilken enhet som helst som är inloggad med det, ominstallation
 eller inte.
 

@@ -1,10 +1,11 @@
 # GeoSweeper Support
 
-**Last updated:** 26 September 2026
+**Last updated:** 4 October 2026
 
 GeoSweeper is classic Minesweeper played on boards cut to the real shape of 204 countries,
-plus a second, endless mode called Infinite Tower. It plays fully offline, keeps your
-progress only on your device, and asks for no account and no personal information — see the
+plus two more worlds: Classic mode, free-form Minesweeper on any board size and difficulty,
+and Infinite Tower, an endless climb. It plays fully offline, keeps your progress only on
+your device, and asks for no account and no personal information — see the
 [Privacy Policy](../privacy/) for the full detail.
 
 ## Contact
@@ -21,15 +22,17 @@ answer on the first reply, include:
 
 ### What's included
 
-GeoSweeper has two worlds. The **Globe** is 204 countries, each a Minesweeper board cut to
+GeoSweeper has three worlds. The **Globe** is 204 countries, each a Minesweeper board cut to
 that country's real outline, grouped into four size-based tiers: **Beginner**,
-**Intermediate**, **Expert**, and **Mega**. **Infinite Tower** is a second, separate world:
-an endless climb, one row at a time, with no map. Settings covers board theme (**Country
-themes**, **Classic**, or **Neon**), map style (**Globe** or **Flat**), explosion effect
-(**Shockwave**, **Embers**, or **Chain**), blast sound, sound and haptics, and your display
-language. **Your Record** shows wins, losses, win rate, and best times, by tier and by
-country. **Countries** lets you browse and search every country, filtered by completed or
-remaining.
+**Intermediate**, **Expert**, and **Mega**. **Classic** is a second world: free-form
+Minesweeper on a plain rectangular board, where you pick the board size yourself and one of
+five difficulties, **Easy** to **Insane**, with a **History** of your finished games.
+**Infinite Tower** is a third, separate world: an endless climb, one row at a time, with no
+map. Settings covers board theme (**Country themes**, **Classic**, or **Neon**), map style
+(**Globe** or **Flat**), explosion effect (**Shockwave**, **Embers**, or **Chain**), blast
+sound, sound and haptics, and your display language. **Your Record** shows wins, losses, win
+rate, and best times, by tier and by country. **Countries** lets you browse and search every
+country, filtered by completed or remaining.
 
 ### Devices and orientations
 
@@ -37,17 +40,24 @@ GeoSweeper needs iOS 17 or later and runs on iPhone and iPad, in portrait and la
 
 ### What does it cost?
 
-The first 10 countries you play, from any tier including Beginner, are free — and once
-you've played a country it stays replayable for good, even after that free trial is spent.
-Infinite Tower's first 10 rows are free too. Everything beyond those two points is a
-separate, one-time purchase — nothing in GeoSweeper renews or bills automatically, and
-nothing you haven't bought is ever billed without a purchase confirmation from Apple first.
+Each of the three worlds has its own free trial. The first 10 countries you play, from any
+tier including Beginner, are free — and once you've played a country it stays replayable for
+good, even after that trial is spent. Classic mode gives you 10 free games the same way.
+Infinite Tower's first 10 rows are free too. Everything beyond those points is a separate,
+one-time purchase — nothing in GeoSweeper renews or bills automatically, and nothing you
+haven't bought is ever billed without a purchase confirmation from Apple first.
 
 ### Unlocking the rest of the map
 
 **All Countries** is a single one-time purchase that permanently unlocks the Intermediate,
 Expert, and Mega tiers for every country. It does not renew and is not a subscription — you
 buy it once and it's yours.
+
+### Unlocking Classic mode
+
+**Classic Lifetime** is a single one-time purchase that permanently unlocks unlimited Classic
+games once your 10 free ones are spent. It does not renew and is not a subscription — you buy
+it once and it's yours.
 
 ### Unlocking Infinite Tower
 
@@ -94,6 +104,15 @@ tier (Beginner, Intermediate, Expert, or Mega) is set by the country's size, not
 you. Nearly every board is checked by a solver so it can be cleared by logic alone, and your
 first tap always opens onto safe ground — a mine is never waiting under it.
 
+### How Classic mode works
+
+Classic is plain Minesweeper, played your way. You set the board's width and height yourself
+and pick one of five difficulties — **Easy**, **Medium**, **Hard**, **Expert**, or **Insane**
+— which sets how densely the board is mined. As on the map, every board is built to be
+clearable by logic alone and your first tap always opens onto safe ground. **History** keeps
+the size, difficulty, time, and result of each finished game, stored only on your device.
+Your first 10 Classic games are free; **Classic Lifetime** unlocks unlimited play after that.
+
 ### How Infinite Tower actually works
 
 Open every safe tile in a row to unlock the row above; hit a mine and that row starts over.
@@ -105,9 +124,9 @@ every row, so closing the app never costs you progress you've already banked.
 ### Where the data went
 
 The board you're actively solving — every tile and flag — exists only in memory while
-you're on it. Close the app in the middle of a board and that board is gone for good; only a
-finished win or loss is saved to your record. There's no undo and no autosave mid-board by
-design.
+you're on it, in all three worlds. Close the app in the middle of a board and that board is
+gone for good; only a finished win or loss is saved to your record or Classic history.
+There's no undo and no autosave mid-board by design.
 
 ### Settings and accessibility
 
@@ -119,10 +138,10 @@ language afterward won't move GeoSweeper out from under you.
 
 ### Reinstalling and data loss
 
-Deleting GeoSweeper deletes your settings, your per-country record, and your Infinite Tower
-progress from that device — there's no server copy to restore from afterward. Purchases are
-the exception: they're tied to your Apple Account and come back with **Restore Purchases**
-on any device signed into it, reinstall or not.
+Deleting GeoSweeper deletes your settings, your per-country record, your Classic mode
+history, and your Infinite Tower progress from that device — there's no server copy to
+restore from afterward. Purchases are the exception: they're tied to your Apple Account and
+come back with **Restore Purchases** on any device signed into it, reinstall or not.
 
 ## Bugs and feature requests
 

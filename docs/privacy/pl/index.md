@@ -2,7 +2,7 @@
 
 **Data wejścia w życie:** 26 września 2026 r
 
-**Ostatnia aktualizacja:** 26 września 2026 r
+**Ostatnia aktualizacja:** 4 października 2026 r
 
 ## Krótka wersja
 
@@ -21,7 +21,9 @@ Wszystko poniżej znajduje się tylko na Twoim urządzeniu, w jednym z trzech mi
 | Ustawienia wyświetlania — motyw planszy, kolor neonu, efekt eksplozji, dźwięk wybuchu, projekcja mapy (kula lub płaska), włączenie/wyłączenie dźwięku i elementów dotykowych | `Ustawienia domyślne użytkownika` | Nie |
 | Language wybrałeś w aplikacji | `Ustawienia domyślne użytkownika` | Nie |
 | Księgowanie z podpowiedzią oceny — daty, w których GeoSweeper poprosił system iOS o wyświetlenie natywnego arkusza ocen oraz który kamień milowy spowodował wyświetlenie ostatniego | `Ustawienia domyślne użytkownika` | Nie |
+| Liczniki darmowych gier — ile z Twoich 10 darmowych krajów na mapie i 10 darmowych gier Classic zostało wykorzystanych | `Ustawienia domyślne użytkownika` | Nie |
 | Rekord w poszczególnych krajach — zwycięstwa, porażki, najlepszy czas i moment odblokowania, dla każdego kraju, w którym grałeś | Plik JSON („progress.json”) w folderze Application Support aplikacji | Nie |
+| Historia trybu Classic — rozmiar planszy, poziom trudności, liczba min, czas oraz wygrana lub przegrana każdej ukończonej gry Classic | Plik JSON (`Classic/history.json`) w folderze Application Support aplikacji | Nie |
 | Postęp Infinite Tower — osiągnięty wiersz, zapisana rzutnia i wyczyszczone wiersze | Lokalna baza danych SQLite | Nie |
 
 Żadna z tych informacji nie jest przesyłana, sprzedawana ani udostępniana nikomu, w tym nam. Własny ruch StoreKit (poniżej) i linki zewnętrzne, na które klikasz (również poniżej), nie przenoszą żadnego z nich. Kopia zapasowa urządzenia iOS może zawierać te pliki w ramach kopii zapasowej aplikacji jako całości — ta kopia zapasowa jest inicjowana przez Ciebie lub przez iOS, a nie przez GeoSweeper i pozostaje wszędzie tam, gdzie ją wyślesz (iCloud lub Twój komputer), a nie u nas.
@@ -32,7 +34,7 @@ GeoSweeper nigdy nie pyta o imię i nazwisko, adres e-mail, numer telefonu, dat�
 
 ## Wszystko, co celowo nie zostało zachowane
 
-Plansza, na której się znajdujesz – każda otwarta płytka, każda umieszczona flaga – jest przechowywana tylko w pamięci podczas gry. Zamknij aplikację w połowie gry, a plansza zniknie; nigdy nie jest zapisywany na dysku i nie ma funkcji automatycznego zapisywania, z której można wznowić niedokończoną planszę. Tylko *dokończony* mecz (wygrana lub przegrana) aktualizuje opisany powyżej rekord w podziale na kraje.
+Plansza, na której się znajdujesz – każda otwarta płytka, każda umieszczona flaga – jest przechowywana tylko w pamięci podczas gry. Dotyczy to wszystkich trzech światów: mapy, trybu Classic i Infinite Tower. Zamknij aplikację w połowie gry, a plansza zniknie; nigdy nie jest zapisywany na dysku i nie ma funkcji automatycznego zapisywania, z której można wznowić niedokończoną planszę. Tylko *dokończony* mecz (wygrana lub przegrana) aktualizuje opisany powyżej rekord w podziale na kraje lub historię trybu Classic.
 
 ## Jedna rzecz, która brzmi, jakby nie była lokalna
 
@@ -44,10 +46,12 @@ GeoSweeper nie żąda żadnych uprawnień systemowych. Nigdy nie prosi o aparat,
 
 ## Zakupy
 
-GeoSweeper można pobrać bezpłatnie. Twoje pierwsze 10 krajów — dowolny poziom, w tym Beginner — jest bezpłatne, a gdy już zagrasz w dany kraj, będzie można w nim grać na stałe, nawet po zakończeniu bezpłatnego okresu próbnego. Infinite Tower jest bezpłatny do wiersza 10. Poza tymi dwoma punktami istnieją dwa niezależne zakupy, zarówno jednorazowe, nie podlegające zużyciu, jak i oferowane za pośrednictwem StoreKit firmy Apple i przetwarzane w całości przez firmę Apple:
+GeoSweeper można pobrać bezpłatnie, a każdy z jego trzech światów ma własny bezpłatny okres próbny. Twoje pierwsze 10 krajów na mapie — dowolny poziom, w tym Beginner — jest bezpłatne, a gdy już zagrasz w dany kraj, będzie można w nim grać na stałe, nawet po zakończeniu tego okresu próbnego. Tryb Classic daje Ci w ten sam sposób 10 darmowych gier. Infinite Tower jest bezpłatny do wiersza 10. Poza tymi punktami istnieją trzy niezależne zakupy, wszystkie jednorazowe, nie podlegające zużyciu, oferowane za pośrednictwem StoreKit firmy Apple i przetwarzane w całości przez firmę Apple:
 
 - **All Countries** — jednorazowy zakup nie nadający się do spożycia, który na stałe odblokowuje
   Poziomy Intermediate, Expert i Mega we wszystkich 204 krajach. Nic w tym nie jest odnawialne.
+- **Classic Lifetime** — jednorazowy zakup nie nadający się do spożycia, który na stałe odblokowuje
+  nieograniczone gry Classic po wykorzystaniu Twoich 10 darmowych. Nic w tym nie jest odnawialne.
 - **Infinite Tower Lifetime** — jednorazowy zakup, który nie podlega zużyciu i który odblokowuje się na stałe
   wspinając się obok rzędu 10. Nic w tym zakresie również nie jest odnawiane, a GeoSweeper nie oferuje żadnego rodzaju subskrypcji.
 
@@ -81,7 +85,7 @@ Odpowiada to etykiecie „Data Not Collected (dane nie są zbierane)”, którą
 
 ## Przechowywanie i usuwanie
 
-Usunięcie aplikacji powoduje natychmiastowe i całkowite usunięcie wszystkich plików przechowywanych na Twoim urządzeniu — ustawień, danych dotyczących poszczególnych krajów i postępów w aplikacji Infinite Tower — ponieważ nigdy nie mieliśmy kopii serwerowej, którą moglibyśmy zatrzymać lub usunąć z naszej strony. Kopia zapasowa urządzenia iCloud wykonana przed usunięciem może nadal zawierać kopię; ta kopia zapasowa jest całkowicie pod Twoją kontrolą poprzez **Settings → Twoje imię i nazwisko → iCloud → Zarządzaj przechowywaniem konta** na Twoim urządzeniu. E-maile dotyczące pomocy technicznej są przechowywane i usuwane osobno, jak opisano powyżej.
+Usunięcie aplikacji powoduje natychmiastowe i całkowite usunięcie wszystkich plików przechowywanych na Twoim urządzeniu — ustawień, danych dotyczących poszczególnych krajów, historii trybu Classic i postępów w aplikacji Infinite Tower — ponieważ nigdy nie mieliśmy kopii serwerowej, którą moglibyśmy zatrzymać lub usunąć z naszej strony. Kopia zapasowa urządzenia iCloud wykonana przed usunięciem może nadal zawierać kopię; ta kopia zapasowa jest całkowicie pod Twoją kontrolą poprzez **Settings → Twoje imię i nazwisko → iCloud → Zarządzaj przechowywaniem konta** na Twoim urządzeniu. E-maile dotyczące pomocy technicznej są przechowywane i usuwane osobno, jak opisano powyżej.
 
 ## Twoje prawa
 

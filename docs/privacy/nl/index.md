@@ -2,7 +2,7 @@
 
 **Ingangsdatum:** 26 september 2026
 
-**Laatst bijgewerkt:** 26 september 2026
+**Laatst bijgewerkt:** 4 oktober 2026
 
 ## De korte versie
 
@@ -21,7 +21,9 @@ Alles hieronder bevindt zich alleen op uw apparaat, op een van de drie plaatsen:
 | Weergave-instellingen — bordthema, neonkleur, explosie-effect, explosiegeluid, kaartprojectie (wereldbol of plat), geluid en haptiek aan/uit | `Gebruikersstandaard` | Nee |
 | Language die je hebt gekozen in de app | `Gebruikersstandaard` | Nee |
 | Boekhouden op basis van beoordelingen: de data waarop GeoSweeper iOS heeft gevraagd het eigen beoordelingsblad weer te geven, en welke mijlpaal de aanleiding was voor de laatste | `Gebruikersstandaard` | Nee |
+| Tellers voor gratis spellen — hoeveel van je 10 gratis kaartlanden en je 10 gratis **Classic**-spellen je hebt gebruikt | `Gebruikersstandaard` | Nee |
 | Record per land: overwinningen, verliezen, beste tijd en wanneer je het hebt ontgrendeld, voor elk land waar je hebt gespeeld | Een JSON-bestand (`progress.json`) in de map Application Support | Nee |
+| Geschiedenis van de **Classic**-modus — de bordgrootte, moeilijkheidsgraad, het aantal mijnen, de tijd en winst of verlies van elk voltooid Classic-spel | Een JSON-bestand (`Classic/history.json`) in de map Application Support | Nee |
 | Infinite Tower voortgang — de rij die u heeft bereikt, uw opgeslagen viewport en welke rijen u heeft gewist | Een lokale SQLite-database | Nee |
 
 Niets hiervan wordt overgedragen, verkocht of gedeeld met wie dan ook, inclusief ons. Het eigen verkeer van StoreKit (hieronder) en de externe links waarop u tikt (ook hieronder) bevatten niets hiervan. Een back-up van een iOS-apparaat kan deze bestanden bevatten als onderdeel van de back-up van de app als geheel. Die back-up wordt door u of door iOS geïnitieerd, nooit door GeoSweeper, en blijft waar u deze ook naartoe stuurt (iCloud of uw computer), niet bij ons.
@@ -32,7 +34,7 @@ GeoSweeper vraagt nooit om een naam, e-mailadres, telefoonnummer, geboortedatum 
 
 ## Alles wat opzettelijk niet werd volgehouden
 
-Het bord waar je middenin zit – elke tegel die je hebt geopend, elke vlag die je hebt geplaatst – wordt alleen in het geheugen bewaard terwijl je speelt. Sluit de app halverwege het spel en dat bord is weg; het wordt nooit naar schijf geschreven en er is geen automatische opslag om een ​​onvoltooid bord te hervatten. Alleen een *voltooid* spel (een overwinning of een verlies) werkt het hierboven beschreven record per land bij.
+Het bord waar je middenin zit – elke tegel die je hebt geopend, elke vlag die je hebt geplaatst – wordt alleen in het geheugen bewaard terwijl je speelt. Dit geldt in alle drie de werelden: de kaart, de **Classic**-modus en **Infinite Tower**. Sluit de app halverwege het spel en dat bord is weg; het wordt nooit naar schijf geschreven en er is geen automatische opslag om een ​​onvoltooid bord te hervatten. Alleen een *voltooid* spel (een overwinning of een verlies) werkt het hierboven beschreven record per land of de Classic-geschiedenis bij.
 
 ## Het enige dat klinkt alsof het niet lokaal is
 
@@ -44,12 +46,11 @@ GeoSweeper vraagt geen enkele systeemmachtiging. Er wordt nooit gevraagd naar de
 
 ## Aankopen
 
-GeoSweeper is gratis te downloaden. Je eerste 10 landen (elk niveau, inclusief Beginner) zijn gratis om te spelen, en als je eenmaal in een land hebt gespeeld, blijft het voor altijd opnieuw speelbaar, zelfs nadat de gratis proefperiode is verstreken. Infinite Tower is gratis tot en met rij 10. Naast deze twee punten zijn er twee onafhankelijke aankopen, beide eenmalig, niet-consumeerbaar, en aangeboden via Apple's StoreKit en volledig door Apple verwerkt:
+GeoSweeper is gratis te downloaden, en elk van de drie werelden heeft een eigen gratis proefperiode. Je eerste 10 landen op de kaart (elk niveau, inclusief Beginner) zijn gratis om te spelen, en als je eenmaal in een land hebt gespeeld, blijft het voor altijd opnieuw speelbaar, zelfs nadat die proefperiode is verstreken. De **Classic**-modus geeft je op dezelfde manier 10 gratis spellen. Infinite Tower is gratis tot en met rij 10. Naast deze punten zijn er drie onafhankelijke aankopen, alle eenmalig, niet-consumeerbaar, en aangeboden via Apple's StoreKit en volledig door Apple verwerkt:
 
-- **All Countries** — een eenmalige, niet-consumeerbare aankoop die de
-  Intermediate-, Expert- en Mega-niveaus in alle 204 landen. Niets hierover wordt vernieuwd.
-- **Infinite Tower Lifetime** — een eenmalige, niet-consumeerbare aankoop die permanent wordt ontgrendeld
-  klimmen voorbij rij 10. Ook hierover wordt niets verlengd, en GeoSweeper biedt geen enkel abonnement.
+- **All Countries** — een eenmalige, niet-consumeerbare aankoop die de Intermediate-, Expert- en Mega-niveaus in alle 204 landen permanent ontgrendelt. Niets hierover wordt vernieuwd.
+- **Classic Lifetime** — een eenmalige, niet-consumeerbare aankoop die onbeperkte Classic-spellen permanent ontgrendelt zodra je 10 gratis spellen op zijn. Niets hierover wordt vernieuwd.
+- **Infinite Tower Lifetime** — een eenmalige, niet-consumeerbare aankoop die het klimmen voorbij rij 10 permanent ontgrendelt. Ook hierover wordt niets verlengd, en GeoSweeper biedt geen enkel abonnement.
 
 Apple, en niet GeoSweeper, verwerkt elke betaling. Er is nooit een kaartnummer, factuuradres of Apple Account-inloggegevens voor ons zichtbaar. StoreKit vertelt de app alleen wat deze nodig heeft om een ​​betaalmuur te tonen en toegang te verlenen: de prijs die moet worden weergegeven en of u momenteel eigenaar bent van elk item. Die antwoorden blijven op uw apparaat; GeoSweeper heeft geen eigen aankoopserver en kan deze nergens naartoe sturen. Bij het herstellen van aankopen wordt Apple gevraagd opnieuw te bevestigen wat uw Apple Account bezit en het antwoord lokaal toe te passen: er worden geen nieuwe records aangemaakt of verzonden.
 
@@ -81,7 +82,7 @@ Dit komt overeen met het "Data Not Collected (geen gegevens verzameld)" -label d
 
 ## Bewaren en verwijderen
 
-Als u de app verwijdert, wordt elk bestand dat op uw apparaat is opgeslagen verwijderd – instellingen, uw gegevens per land en uw Infinite Tower-voortgang – onmiddellijk en volledig, omdat er nooit een serverkopie was die wij konden bewaren of verwijderen aan onze kant. Een back-up van een iCloud-apparaat die vóór verwijdering is gemaakt, kan nog steeds een kopie bevatten; die back-up heeft u volledig onder controle via **Settings → uw naam → iCloud → Accountopslag beheren** op uw apparaat. Ondersteunings-e-mails worden afzonderlijk bewaard en verwijderd, zoals hierboven beschreven.
+Als u de app verwijdert, wordt elk bestand dat op uw apparaat is opgeslagen verwijderd – instellingen, uw gegevens per land, uw geschiedenis van de Classic-modus en uw Infinite Tower-voortgang – onmiddellijk en volledig, omdat er nooit een serverkopie was die wij konden bewaren of verwijderen aan onze kant. Een back-up van een iCloud-apparaat die vóór verwijdering is gemaakt, kan nog steeds een kopie bevatten; die back-up heeft u volledig onder controle via **Settings → uw naam → iCloud → Accountopslag beheren** op uw apparaat. Ondersteunings-e-mails worden afzonderlijk bewaard en verwijderd, zoals hierboven beschreven.
 
 ## Jouw rechten
 

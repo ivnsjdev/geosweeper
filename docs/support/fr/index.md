@@ -1,11 +1,12 @@
 # Support GeoSweeper
 
-**Dernière mise à jour :** 26 septembre 2026
+**Dernière mise à jour :** 4 octobre 2026
 
 GeoSweeper est le Démineur classique joué sur des plateaux découpés à la forme réelle de 204
-pays, plus un second mode sans fin appelé **Infinite Tower**. L'application fonctionne
-entièrement hors ligne, ne conserve votre progression que sur votre appareil, et ne demande
-ni compte ni information personnelle — voir la
+pays, plus deux mondes supplémentaires : le mode **Classic**, du Démineur libre sur n'importe
+quelle taille de plateau et difficulté, et **Infinite Tower**, une ascension sans fin.
+L'application fonctionne entièrement hors ligne, ne conserve votre progression que sur votre
+appareil, et ne demande ni compte ni information personnelle — voir la
 [Politique de confidentialité](../../privacy/fr/) pour tous les détails.
 
 <a id="contact"></a>
@@ -23,10 +24,13 @@ une réponse utile dès le premier message, indiquez :
 
 ### Ce que contient l'application
 
-GeoSweeper comporte deux mondes. **Globe** regroupe 204 pays, chacun étant un plateau de
+GeoSweeper comporte trois mondes. **Globe** regroupe 204 pays, chacun étant un plateau de
 Démineur découpé selon le contour réel de ce pays, répartis en quatre niveaux selon leur
-taille : **Beginner**, **Intermediate**, **Expert** et **Mega**. **Infinite Tower** est un
-second monde, séparé : une ascension sans fin, une ligne à la fois, sans carte. Settings
+taille : **Beginner**, **Intermediate**, **Expert** et **Mega**. **Classic** est un deuxième
+monde : du Démineur libre sur un plateau rectangulaire simple, où vous choisissez vous-même la
+taille du plateau et l'une des cinq difficultés, d'**Easy** à **Insane**, avec un **History**
+de vos parties terminées. **Infinite Tower** est un troisième monde, séparé : une ascension
+sans fin, une ligne à la fois, sans carte. Settings
 regroupe le thème du plateau (**Country themes**, **Classic**, ou **Neon**), le style de carte
 (**Globe** ou **Flat**), l'effet d'explosion (**Shockwave**, **Embers**, ou **Chain**), le son
 d'impact, le son et les retours haptiques, et votre langue d'affichage. **Your Record** affiche
@@ -41,18 +45,25 @@ portrait comme en paysage.
 
 ### Quel est le prix ?
 
-Les 10 premiers pays auxquels vous jouez, quel que soit le niveau y compris **Beginner**, sont
-gratuits — et une fois qu'un pays a été joué, il reste rejouable pour de bon, même après
-épuisement de cet essai gratuit. Les 10 premières lignes d'Infinite Tower sont également
-gratuites. Tout ce qui va au-delà de ces deux points fait l'objet d'un achat séparé et unique —
-rien dans GeoSweeper ne se renouvelle ni ne se facture automatiquement, et rien que vous
-n'avez pas acheté n'est jamais facturé sans confirmation d'achat d'Apple au préalable.
+Chacun des trois mondes a son propre essai gratuit. Les 10 premiers pays auxquels vous jouez,
+quel que soit le niveau y compris **Beginner**, sont gratuits — et une fois qu'un pays a été
+joué, il reste rejouable pour de bon, même après épuisement de cet essai. Le mode **Classic**
+vous offre 10 parties gratuites de la même façon. Les 10 premières lignes d'Infinite Tower
+sont également gratuites. Tout ce qui va au-delà de ces points fait l'objet d'un achat séparé
+et unique — rien dans GeoSweeper ne se renouvelle ni ne se facture automatiquement, et rien
+que vous n'avez pas acheté n'est jamais facturé sans confirmation d'achat d'Apple au préalable.
 
 ### Débloquer le reste de la carte
 
 **All Countries** est un achat unique qui débloque de façon permanente les niveaux
 **Intermediate**, **Expert** et **Mega** pour tous les pays. Il ne se renouvelle pas et n'est
 pas un abonnement — vous l'achetez une fois et il est à vous.
+
+### Débloquer le mode Classic
+
+**Classic Lifetime** est un achat unique qui débloque de façon permanente les parties
+illimitées de Classic une fois vos 10 parties gratuites épuisées. Il ne se renouvelle pas et
+n'est pas un abonnement — vous l'achetez une fois et il est à vous.
 
 ### Débloquer Infinite Tower
 
@@ -72,8 +83,8 @@ au même compte Apple, y compris après une réinstallation. Si cela reste verro
 
 Non. Les achats sont liés à votre compte Apple, pas aux fichiers locaux de l'application, donc
 Restore Purchases les récupère après une nouvelle installation. Votre record par pays et votre
-progression dans Infinite Tower, en revanche, sont locaux à l'appareil — une réinstallation
-les efface, comme le ferait la suppression de n'importe quel fichier.
+progression dans Infinite Tower, en revanche, sont locaux à l'appareil — une réinstallation les efface, comme le ferait la suppression de n'importe quel
+fichier.
 
 ### Remboursements
 
@@ -101,6 +112,16 @@ déterminé par la taille du pays, pas par vous. Presque tous les plateaux sont 
 solveur pour pouvoir être résolus par la seule logique, et votre premier appui tombe toujours
 sur un terrain sûr — une mine n'y attend jamais en dessous.
 
+### Comment fonctionne le mode Classic
+
+Classic, c'est du Démineur simple, joué à votre façon. Vous fixez vous-même la largeur et la
+hauteur du plateau et choisissez l'une des cinq difficultés — **Easy**, **Medium**, **Hard**,
+**Expert** ou **Insane** — qui détermine la densité de mines du plateau. Comme sur la carte,
+chaque plateau est conçu pour être résolu par la seule logique et votre premier appui tombe
+toujours sur un terrain sûr. **History** conserve la taille, la difficulté, le temps et le
+résultat de chaque partie terminée, stockés uniquement sur votre appareil. Vos 10 premières
+parties de Classic sont gratuites ; **Classic Lifetime** débloque ensuite le jeu illimité.
+
 ### Comment fonctionne réellement Infinite Tower
 
 Ouvrez toutes les cases sûres d'une ligne pour débloquer la ligne suivante ; touchez une mine
@@ -113,9 +134,10 @@ chaque ligne, donc fermer l'application ne vous coûte jamais la progression dé
 ### Où sont passées les données
 
 Le plateau que vous résolvez activement — chaque case et chaque drapeau — n'existe qu'en
-mémoire pendant que vous y êtes. Fermez l'application en pleine partie et ce plateau disparaît
-pour de bon ; seule une victoire ou une défaite terminée est enregistrée dans votre record. Il
-n'y a ni annulation ni sauvegarde automatique en cours de partie, par conception.
+mémoire pendant que vous y êtes, dans les trois mondes. Fermez l'application en pleine partie
+et ce plateau disparaît pour de bon ; seule une victoire ou une défaite terminée est
+enregistrée dans votre record ou dans l'historique de Classic. Il n'y a ni annulation ni
+sauvegarde automatique en cours de partie, par conception.
 
 ### Réglages et accessibilité
 
@@ -129,8 +151,8 @@ pieds.
 
 ### Réinstallation et perte de données
 
-Supprimer GeoSweeper efface vos réglages, votre record par pays et votre progression dans
-Infinite Tower de cet appareil — il n'existe aucune copie sur un serveur pour les restaurer
+Supprimer GeoSweeper efface vos réglages, votre record par pays, votre historique du mode
+Classic et votre progression dans Infinite Tower de cet appareil — il n'existe aucune copie sur un serveur pour les restaurer
 ensuite. Les achats font exception : ils sont liés à votre compte Apple et reviennent avec
 **Restore Purchases** sur tout appareil connecté à ce compte, réinstallation ou non.
 

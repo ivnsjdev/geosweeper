@@ -2,7 +2,7 @@
 
 **Geçerlilik tarihi:** 26 Eylül 2026
 
-**Son güncelleme:** 26 Eylül 2026
+**Son güncelleme:** 4 Ekim 2026
 
 ## Kısa versiyon
 
@@ -21,7 +21,9 @@ Aşağıdaki her şey yalnızca cihazınızda üç yerden birinde bulunur: "User
 | Ekran ayarları — pano teması, neon rengi, patlama efekti, patlama sesi, harita projeksiyonu (küresel veya düz), ses ve dokunsal etkiyi açma/kapama | 'Kullanıcı Varsayılanları' | Hayır |
 | Uygulamanın içinde seçtiğiniz Language | 'Kullanıcı Varsayılanları' | Hayır |
 | Derecelendirme istemli defter tutma — GeoSweeper'in iOS'tan yerel derecelendirme tablosunu göstermesini istediği tarihler ve sonuncuyu hangi dönüm noktasının tetiklediği | 'Kullanıcı Varsayılanları' | Hayır |
+| Ücretsiz oyun sayaçları — haritadaki 10 ücretsiz ülkenizden ve 10 ücretsiz Classic oyununuzdan kaçını kullandığınız | 'Kullanıcı Varsayılanları' | Hayır |
 | Ülke bazında rekor — oynadığınız her ülke için galibiyetler, mağlubiyetler, en iyi zaman ve kilidi açtığınızda | Uygulamanın Uygulama Desteği klasöründeki bir JSON dosyası (`progress.json`) | Hayır |
+| Classic mod geçmişi — her tamamlanan Classic oyununun pano boyutu, zorluğu, mayın sayısı, süresi ve galibiyet ya da mağlubiyeti | Uygulamanın Uygulama Desteği klasöründeki bir JSON dosyası (`Classic/history.json`) | Hayır |
 | Infinite Tower ilerleme — ulaştığınız satır, kayıtlı görünüm pencereniz ve hangi satırları temizlediğiniz | Yerel bir SQLite veritabanı | Hayır |
 
 Bunların hiçbiri biz dahil hiç kimseye iletilmez, satılmaz veya paylaşılmaz. StoreKit'in kendi trafiği (aşağıda) ve dokunduğunuz harici bağlantılar (yine aşağıda) bunların hiçbirini taşımamaktadır. Bir iOS cihazı yedeklemesi, uygulamanın bir bütün olarak yedeklenmesinin bir parçası olarak bu dosyaları içerebilir; bu yedekleme sizin tarafınızdan veya iOS tarafından başlatılır, asla GeoSweeper tarafından başlatılmaz ve bizde değil, gönderdiğiniz yerde (iCloud veya bilgisayarınız) kalır.
@@ -32,7 +34,7 @@ GeoSweeper hiçbir zaman isim, e-posta adresi, telefon numarası, doğum tarihi 
 
 ## Kasıtlı olarak ısrar edilmeyen herhangi bir şey
 
-Ortasında olduğunuz tahta, açtığınız her taş, yerleştirdiğiniz her bayrak, yalnızca siz oynarken hafızanızda tutulur. Oyunun ortasında uygulamayı kapattığınızda tahta kaybolur; hiçbir zaman diske yazılmaz ve tamamlanmamış bir panoyu devam ettirmek için otomatik kaydetme yoktur. Yalnızca *bitmiş* bir oyun (galibiyet veya mağlubiyet), yukarıda açıklanan ülke bazında rekoru günceller.
+Ortasında olduğunuz tahta, açtığınız her taş, yerleştirdiğiniz her bayrak, yalnızca siz oynarken hafızanızda tutulur. Bu, üç dünyanın tamamı için geçerlidir: harita, Classic modu ve Infinite Tower. Oyunun ortasında uygulamayı kapattığınızda tahta kaybolur; hiçbir zaman diske yazılmaz ve tamamlanmamış bir panoyu devam ettirmek için otomatik kaydetme yoktur. Yalnızca *bitmiş* bir oyun (galibiyet veya mağlubiyet), yukarıda açıklanan ülke bazında rekoru veya Classic geçmişini günceller.
 
 ## Yerel değilmiş gibi görünen tek şey
 
@@ -44,10 +46,12 @@ GeoSweeper hiçbir şekilde sistem izni istemez. Hiçbir zaman kamerayı, fotoğ
 
 ## Satın Alma İşlemleri
 
-GeoSweeper'i indirmek ücretsizdir. İlk 10 ülkenizi (Beginner dahil herhangi bir seviye) oynamak ücretsizdir ve bir ülkeyi bir kez oynadığınızda, bu ücretsiz deneme bittikten sonra bile tekrar oynanabilir durumda kalır. Infinite Tower, 10. sıraya kadar ücretsizdir. Bu iki noktanın ötesinde, her ikisi de tek seferlik, sarf malzemesi olmayan ve Apple'ın StoreKit'i aracılığıyla sunulan ve tamamen Apple tarafından işlenen iki bağımsız satın alma işlemi vardır:
+GeoSweeper'i indirmek ücretsizdir ve üç dünyasının her birinin kendi ücretsiz denemesi vardır. Haritadaki ilk 10 ülkeniz (Beginner dahil herhangi bir seviye) oynamak ücretsizdir ve bir ülkeyi bir kez oynadığınızda, bu deneme bittikten sonra bile tekrar oynanabilir durumda kalır. Classic modu da aynı şekilde size 10 ücretsiz oyun verir. Infinite Tower, 10. sıraya kadar ücretsizdir. Bu noktaların ötesinde, hepsi tek seferlik, sarf malzemesi olmayan ve Apple'ın StoreKit'i aracılığıyla sunulan ve tamamen Apple tarafından işlenen üç bağımsız satın alma işlemi vardır:
 
 - **All Countries** — kalıcı olarak kilidi açan tek seferlik, tüketilmeyen bir satın alma işlemidir.
   204 ülkenin tamamında Intermediate, Expert ve Mega katmanları. Bu konuda yenilenen hiçbir şey yok.
+- **Classic Lifetime** — 10 ücretsiz oyununuz bittikten sonra sınırsız Classic oyununun kilidini
+  kalıcı olarak açan tek seferlik, tüketilmeyen bir satın alma işlemidir. Bu konuda yenilenen hiçbir şey yok.
 - **Infinite Tower Lifetime** — kilidi kalıcı olarak açan, tek seferlik, tüketilmeyen bir satın alma
   10. sırayı geçerek tırmanıyor. Bu konuda da hiçbir şey yenilenmiyor ve GeoSweeper herhangi bir abonelik sunmuyor.
 
@@ -81,7 +85,7 @@ Bu, GeoSweeper'in App Store üzerinde taşıdığı "Data Not Collected (veri to
 
 ## Saklama ve silme
 
-Uygulamanın silinmesi, cihazınızda depolanan her dosyayı (ayarlar, ülke başına kaydınız ve Infinite Tower ilerlemeniz) anında ve tamamen siler, çünkü bizim tarafımızdan tutulacak veya silinecek bir sunucu kopyası hiçbir zaman olmadı. Silme işleminden önce oluşturulan bir iCloud cihazı yedeklemesi hâlâ bir kopya içerebilir; Bu yedekleme, cihazınızdaki **Settings → adınız → iCloud → Hesap Depolama Alanını Yönet** yoluyla tamamen sizin kontrolünüz altındadır. Destek e-postaları yukarıda açıklandığı gibi ayrı olarak saklanır ve silinir.
+Uygulamanın silinmesi, cihazınızda depolanan her dosyayı (ayarlar, ülke başına kaydınız, Classic geçmişi ve Infinite Tower ilerlemeniz) anında ve tamamen siler, çünkü bizim tarafımızdan tutulacak veya silinecek bir sunucu kopyası hiçbir zaman olmadı. Silme işleminden önce oluşturulan bir iCloud cihazı yedeklemesi hâlâ bir kopya içerebilir; Bu yedekleme, cihazınızdaki **Settings → adınız → iCloud → Hesap Depolama Alanını Yönet** yoluyla tamamen sizin kontrolünüz altındadır. Destek e-postaları yukarıda açıklandığı gibi ayrı olarak saklanır ve silinir.
 
 ## Haklarınız
 

@@ -2,7 +2,7 @@
 
 **Hatálybalépés dátuma:** 2026. szeptember 26
 
-**Utolsó frissítés:** 2026. szeptember 26
+**Utolsó frissítés:** 2026. október 4
 
 ## A rövid változat
 
@@ -21,7 +21,9 @@ Az alábbiakban felsoroltak csak az Ön eszközén élnek, a három hely egyiké
 | Megjelenítési beállítások – táblatéma, neonszín, robbanáshatás, robbanáshang, térképvetítés (földgömb vagy lapos), hang és tapintás be/ki | `UserDefaults` | Nem |
 | Language, amelyet az alkalmazásban választott | `UserDefaults` | Nem |
 | Értékelési kérdőíves könyvelés – az GeoSweeper a natív értékelési lap megjelenítésére kért iOS dátumok, és hogy melyik mérföldkő váltotta ki az utolsót | `UserDefaults` | Nem |
+| Ingyenes játékok számlálói – hányat használt fel a térkép 10 ingyenes országából és a 10 ingyenes Classic játékból | `UserDefaults` | Nem |
 | Országonkénti rekord – győzelmek, vereségek, legjobb idő, és amikor feloldottad, minden országban, ahol játszottál | JSON-fájl ("progress.json") az alkalmazás Alkalmazástámogatás mappájában | Nem |
+| Classic mód előzményei – minden befejezett Classic játék táblamérete, nehézsége, aknaszáma, ideje és győzelme vagy veresége | JSON-fájl (`Classic/history.json`) az alkalmazás Alkalmazástámogatás mappájában | Nem |
 | Infinite Tower előrehaladás — az elért sor, a mentett nézetablak és a törölt sorok | Egy helyi SQLite adatbázis | Nem |
 
 Ezek egyikét sem továbbítják, értékesítik vagy megosztják senkivel, beleértve minket is. Az StoreKit saját forgalma (lent) és az Ön által megérintett külső hivatkozások (szintén lent) ezt nem hordozzák. Az iOS-eszköz biztonsági másolata tartalmazhatja ezeket a fájlokat az alkalmazás egészének biztonsági mentésének részeként – a biztonsági mentést Ön vagy az iOS kezdeményezi, az GeoSweeper soha, és bárhová küldi (iCloud vagy számítógépe), nem nálunk marad.
@@ -32,7 +34,7 @@ Az GeoSweeper soha nem kér nevet, e-mail címet, telefonszámot, születési d�
 
 ## Bármi, ami szándékosan nem maradt fenn
 
-A tábla, amelynek a közepén állsz – minden lapkát, amit kinyitottál, minden zászlót, amit lehelyeztél – játék közben csak a memória tárolja. Zárja be az alkalmazást játék közben, és a tábla eltűnik; soha nem írják lemezre, és nincs automatikus mentés a befejezetlen tábla folytatásához. Csak egy *befejezett* játék (győzelem vagy vereség) frissíti a fent leírt országonkénti rekordot.
+A tábla, amelynek a közepén állsz – minden lapkát, amit kinyitottál, minden zászlót, amit lehelyeztél – játék közben csak a memória tárolja. Ez mindhárom világra igaz: a térképre, a Classic módra és az Infinite Towerre. Zárja be az alkalmazást játék közben, és a tábla eltűnik; soha nem írják lemezre, és nincs automatikus mentés a befejezetlen tábla folytatásához. Csak egy *befejezett* játék (győzelem vagy vereség) frissíti a fent leírt országonkénti rekordot vagy a Classic előzményeket.
 
 ## Az egyetlen dolog, ami úgy hangzik, mintha nem helyi lenne
 
@@ -44,10 +46,12 @@ Az GeoSweeper semmilyen rendszerengedélyt nem kér. Soha nem kéri a kamerát, 
 
 ## Vásárlások
 
-Az GeoSweeper ingyenesen letölthető. Az első 10 országban – bármilyen szinten, beleértve az Beginner-et is – ingyenesen játszhatsz, és ha már játszottál egy országgal, az örökre újrajátszható marad, még az ingyenes próbaidőszak elteltével is. Az Infinite Tower a 10. sorig ingyenes. Ezen a két ponton kívül van még két független vásárlás, mindkettő egyszeri, nem fogyasztható, és az Apple StoreKit-en keresztül kínálja, és teljes egészében az Apple feldolgozza:
+Az GeoSweeper ingyenesen letölthető, és mindhárom világ saját ingyenes próbaidőszakkal rendelkezik. A térkép első 10 országában – bármilyen szinten, beleértve az Beginner-et is – ingyenesen játszhatsz, és ha már játszottál egy országgal, az örökre újrajátszható marad, még e próbaidőszak elteltével is. A Classic mód ugyanígy 10 ingyenes játékot ad. Az Infinite Tower a 10. sorig ingyenes. Ezeken a pontokon kívül van még három független vásárlás, mind egyszeri, nem fogyasztható, és az Apple StoreKit-en keresztül kínálja, és teljes egészében az Apple feldolgozza:
 
 - **All Countries** – egyszeri, nem fogyóeszköz vásárlás, amely véglegesen feloldja a
   Intermediate, Expert és Mega szintek mind a 204 országban. Ezzel kapcsolatban semmi sem újul meg.
+- **Classic Lifetime** – egyszeri, nem fogyóeszköz vásárlás, amely véglegesen feloldja a
+  korlátlan Classic játékokat, miután a 10 ingyenes játékod elfogyott. Ezzel kapcsolatban semmi sem újul meg.
 - **Infinite Tower Lifetime** – egyszeri, nem elfogyasztható vásárlás, amely véglegesen feloldja
   a 10. soron túllépve. Ezzel kapcsolatban sem újul meg semmi, és az GeoSweeper nem kínál semmiféle előfizetést.
 
@@ -81,7 +85,7 @@ Ez megegyezik az „Data Not Collected (nem gyűjtött adatok)” címkével, am
 
 ## Megőrzés és törlés
 
-Az alkalmazás törlésével az eszközén tárolt minden fájl – beállítások, országonkénti rekordok és Infinite Tower előrehaladása – azonnal és teljesen törlődik, mert soha nem volt szervermásolat, amelyet megtarthatnánk vagy törölhettünk volna. A törlés előtt készített iCloud eszköz biztonsági másolata továbbra is tartalmazhat másolatot; hogy a biztonsági mentés teljes mértékben az Ön ellenőrzése alatt áll az eszközén található **Settings → az Ön neve → iCloud → Fióktárhely kezelése** segítségével. A támogatási e-maileket a fent leírtak szerint külön őrizzük meg és töröljük.
+Az alkalmazás törlésével az eszközén tárolt minden fájl – beállítások, országonkénti rekordok, Classic előzmények és Infinite Tower előrehaladása – azonnal és teljesen törlődik, mert soha nem volt szervermásolat, amelyet megtarthatnánk vagy törölhettünk volna. A törlés előtt készített iCloud eszköz biztonsági másolata továbbra is tartalmazhat másolatot; hogy a biztonsági mentés teljes mértékben az Ön ellenőrzése alatt áll az eszközén található **Settings → az Ön neve → iCloud → Fióktárhely kezelése** segítségével. A támogatási e-maileket a fent leírtak szerint külön őrizzük meg és töröljük.
 
 ## Az Ön jogai
 

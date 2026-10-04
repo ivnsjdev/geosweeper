@@ -1,8 +1,8 @@
 # Obsługa GeoSweeper
 
-**Ostatnia aktualizacja:** 26 września 2026 r
+**Ostatnia aktualizacja:** 4 października 2026 r
 
-GeoSweeper to klasyczny Saper, w który gra się na planszach przyciętych do rzeczywistego kształtu 204 krajów, plus drugi, niekończący się tryb o nazwie Infinite Tower. Gra w trybie offline, przechowuje Twoje postępy tylko na Twoim urządzeniu i nie wymaga podawania konta ani danych osobowych — szczegółowe informacje znajdziesz w [Polityce prywatności](../../privacy/pl/).
+GeoSweeper to klasyczny Saper, w który gra się na planszach przyciętych do rzeczywistego kształtu 204 krajów, plus dwa kolejne światy: tryb Classic, swobodny Saper na dowolnym rozmiarze planszy i poziomie trudności, oraz Infinite Tower, niekończąca się wspinaczka. Gra w trybie offline, przechowuje Twoje postępy tylko na Twoim urządzeniu i nie wymaga podawania konta ani danych osobowych — szczegółowe informacje znajdziesz w [Polityce prywatności](../../privacy/pl/).
 
 <a id="contact"></a>
 ## Kontakt
@@ -18,7 +18,7 @@ Napisz do **ivnsjdev@gmail.com**, a my odpowiemy w ciągu 2–3 dni roboczych. A
 
 ### Co obejmuje
 
-GeoSweeper ma dwa światy. **Globe** to 204 kraje, każdy z nich to tablica trałowca przycięta zgodnie z rzeczywistym zarysem tego kraju, pogrupowana w cztery poziomy oparte na rozmiarze: **Beginner**, **Intermediate**, **Expert** i **Mega**. **Infinite Tower** to drugi, odrębny świat: niekończąca się wspinaczka, rząd po rzędzie, bez mapy. Settings obejmuje motyw planszy (**Country themes**, **Classic** lub **Neon**), styl mapy (**Globe** lub **Flat**), efekt eksplozji (**Shockwave**, **Embers** lub **Chain**), dźwięk wybuchu, dźwięk i elementy dotykowe oraz wyświetlacz język. **Your Record** pokazuje wygrane, przegrane, współczynnik wygranych i najlepsze czasy, według poziomu i kraju. **Countries** pozwala przeglądać i przeszukiwać każdy kraj, filtrując według ukończonych lub pozostałych.
+GeoSweeper ma trzy światy. **Globe** to 204 kraje, każdy z nich to tablica trałowca przycięta zgodnie z rzeczywistym zarysem tego kraju, pogrupowana w cztery poziomy oparte na rozmiarze: **Beginner**, **Intermediate**, **Expert** i **Mega**. **Classic** to drugi świat: swobodny Saper na zwykłej prostokątnej planszy, na której sam wybierasz rozmiar planszy i jeden z pięciu poziomów trudności, od **Easy** do **Insane**, z **History** ukończonych gier. **Infinite Tower** to trzeci, odrębny świat: niekończąca się wspinaczka, rząd po rzędzie, bez mapy. Settings obejmuje motyw planszy (**Country themes**, **Classic** lub **Neon**), styl mapy (**Globe** lub **Flat**), efekt eksplozji (**Shockwave**, **Embers** lub **Chain**), dźwięk wybuchu, dźwięk i elementy dotykowe oraz wyświetlacz język. **Your Record** pokazuje wygrane, przegrane, współczynnik wygranych i najlepsze czasy, według poziomu i kraju. **Countries** pozwala przeglądać i przeszukiwać każdy kraj, filtrując według ukończonych lub pozostałych.
 
 ### Urządzenia i orientacje
 
@@ -26,11 +26,15 @@ GeoSweeper wymaga systemu iOS 17 lub nowszego i działa na iPhone i iPadzie, w o
 
 ### Ile to kosztuje?
 
-Pierwsze 10 krajów, w których grasz, z dowolnego poziomu, w tym Beginner, jest bezpłatnych — a gdy już zagrasz w dany kraj, będzie można w nim na stałe grać, nawet po zakończeniu bezpłatnego okresu próbnego. Pierwsze 10 wierszy Infinite Tower również jest bezpłatnych. Wszystko poza tymi dwoma punktami stanowi oddzielny, jednorazowy zakup — nic w GeoSweeper nie jest odnawiane ani rozliczane automatycznie, a nic, czego nie kupiłeś, nie jest nigdy rozliczane bez uprzedniego potwierdzenia zakupu od Apple.
+Każdy z trzech światów ma własny bezpłatny okres próbny. Pierwsze 10 krajów, w których grasz, z dowolnego poziomu, w tym Beginner, jest bezpłatnych — a gdy już zagrasz w dany kraj, będzie można w nim na stałe grać, nawet po zakończeniu tego okresu próbnego. Tryb Classic daje Ci w ten sam sposób 10 darmowych gier. Pierwsze 10 wierszy Infinite Tower również jest bezpłatnych. Wszystko poza tymi punktami stanowi oddzielny, jednorazowy zakup — nic w GeoSweeper nie jest odnawiane ani rozliczane automatycznie, a nic, czego nie kupiłeś, nie jest nigdy rozliczane bez uprzedniego potwierdzenia zakupu od Apple.
 
 ### Odblokowanie reszty mapy
 
 **All Countries** to pojedynczy jednorazowy zakup, który na stałe odblokowuje poziomy Intermediate, Expert i Mega dla każdego kraju. Nie odnawia się i nie jest subskrypcją — kupujesz raz i jest Twoje.
+
+### Odblokowanie trybu Classic
+
+**Classic Lifetime** to pojedynczy jednorazowy zakup, który na stałe odblokowuje nieograniczone gry Classic po wykorzystaniu Twoich 10 darmowych. Nie odnawia się i nie jest subskrypcją — kupujesz raz i jest Twoje.
 
 ### Odblokowanie Infinite Tower
 
@@ -60,13 +64,17 @@ GeoSweeper ma oznaczenie wiekowe przeznaczone dla ogółu odbiorców. W aplikacj
 
 Plansza każdego kraju jest generowana na podstawie jej prawdziwego zarysu — kafelki istnieją tylko tam, gdzie znajduje się ląd, linie brzegowe wyginają planszę, a najmniejsze wyspy stają się już otwarte jako sceneria. Poziom (Beginner, Intermediate, Expert lub Mega) jest ustalany na podstawie rozmiaru kraju, a nie wybranego przez Ciebie. Prawie każda plansza jest sprawdzana przez solwera, więc można ją wyczyścić wyłącznie na podstawie logiki, a pierwsze dotknięcie zawsze otwiera się na bezpieczny grunt — pod nią nigdy nie czeka na mnie mina.
 
+### Jak działa tryb Classic
+
+Classic to zwykły Saper, grany po Twojemu. Sam ustawiasz szerokość i wysokość planszy oraz wybierasz jeden z pięciu poziomów trudności — **Easy**, **Medium**, **Hard**, **Expert** lub **Insane** — który określa, jak gęsto plansza jest zaminowana. Tak jak na mapie, każda plansza jest zbudowana tak, aby można ją było wyczyścić wyłącznie na podstawie logiki, a pierwsze dotknięcie zawsze otwiera się na bezpieczny grunt. **History** przechowuje rozmiar, poziom trudności, czas i wynik każdej ukończonej gry, zapisane tylko na Twoim urządzeniu. Twoje pierwsze 10 gier Classic jest bezpłatnych; **Classic Lifetime** odblokowuje potem nieograniczoną grę.
+
 ### Jak faktycznie działa Infinite Tower
 
 Otwórz każdy sejf w rzędzie, aby odblokować rząd powyżej; uderz w minę i ta kłótnia zaczyna się od nowa. Od rzędu 100 w górę uderzenie w minę powoduje również przewrócenie się o kilka rzędów w dół, a nie tylko na górę bieżącego — zostało to ujawnione tutaj, ponieważ łatwo jest przeoczyć, dopóki to się nie stanie. Zagęszczenie min wzrasta, im wyżej się wspinasz. Twój wiersz, rzutnia i wyczyszczone wiersze są zapisywane po każdym wierszu, więc zamknięcie aplikacji nigdy nie spowoduje utraty postępów, które już zgromadziłeś.
 
 ### Gdzie poszły dane
 
-Plansza, którą aktywnie rozwiązujesz – każda płytka i flaga – istnieje tylko w pamięci, kiedy na niej jesteś. Zamknij aplikację na środku tablicy, a tablica zniknie na dobre; w Twoim rejestrze zapisywane jest tylko zakończone zwycięstwo lub przegrana. Z założenia nie ma możliwości cofania ani automatycznego zapisywania.
+Plansza, którą aktywnie rozwiązujesz – każda płytka i flaga – istnieje tylko w pamięci, kiedy na niej jesteś, we wszystkich trzech światach. Zamknij aplikację na środku tablicy, a tablica zniknie na dobre; w Twoim rejestrze lub historii trybu Classic zapisywane jest tylko zakończone zwycięstwo lub przegrana. Z założenia nie ma możliwości cofania ani automatycznego zapisywania.
 
 ### Settings i dostępność
 
@@ -74,7 +82,7 @@ Dźwięk i wrażenia dotykowe mają w Settings swój własny przełącznik, niez
 
 ### Ponowna instalacja i utrata danych
 
-Usunięcie GeoSweeper powoduje usunięcie Twoich ustawień, rekordu dla poszczególnych krajów i postępu Infinite Tower z tego urządzenia — nie ma kopii serwera, którą można później przywrócić. Zakupy stanowią wyjątek: są powiązane z Twoim Apple Account i wracają z **Restore Purchases** na dowolnym urządzeniu, na którym się zalogujesz, niezależnie od tego, czy zainstalujesz je ponownie, czy nie.
+Usunięcie GeoSweeper powoduje usunięcie Twoich ustawień, rekordu dla poszczególnych krajów, historii trybu Classic i postępu Infinite Tower z tego urządzenia — nie ma kopii serwera, którą można później przywrócić. Zakupy stanowią wyjątek: są powiązane z Twoim Apple Account i wracają z **Restore Purchases** na dowolnym urządzeniu, na którym się zalogujesz, niezależnie od tego, czy zainstalujesz je ponownie, czy nie.
 
 ## Błędy i prośby o funkcje
 

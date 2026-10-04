@@ -2,7 +2,7 @@
 
 **Gældende fra:** 26. september 2026
 
-**Sidst opdateret:** 26. september 2026
+**Sidst opdateret:** 4. oktober 2026
 
 ## Den korte version
 
@@ -30,7 +30,9 @@ SQLite-database.
 | Visningsindstillinger — brættema, neonfarve, eksplosionseffekt, smældlyd, kortprojektion (Globe eller Flat), lyd og haptik til/fra | `UserDefaults` | Nej |
 | Sprog du har valgt i appen | `UserDefaults` | Nej |
 | Bogføring af vurderingspåmindelser — datoerne hvor GeoSweeper har bedt iOS vise den indbyggede vurderingsboks, og hvilken milepæl der udløste den seneste | `UserDefaults` | Nej |
+| Tællere for gratis spil — hvor mange af dine 10 gratis kortlande og dine 10 gratis **Classic**-spil du har brugt | `UserDefaults` | Nej |
 | Rekord pr. land — sejre, nederlag, bedste tid, og hvornår du låste det op, for hvert land du har spillet | En JSON-fil (`progress.json`) i appens Application Support-mappe | Nej |
+| Historik for **Classic**-tilstand — brætstørrelsen, sværhedsgraden, antallet af miner, tiden og sejr eller nederlag for hvert afsluttet Classic-spil | En JSON-fil (`Classic/history.json`) i appens Application Support-mappe | Nej |
 | Infinite Tower-fremskridt — den række du har nået, din gemte visning, og hvilke rækker du har klaret | En lokal SQLite-database | Nej |
 
 Intet af dette overføres, sælges eller deles med nogen, heller ikke med os. StoreKits egen
@@ -50,10 +52,11 @@ starter forfra der, fordi der ikke findes nogen serverkopi noget sted at synkron
 ## Ting der bevidst ikke gemmes
 
 Brættet du er midt i — hver flise du har åbnet, hvert flag du har placeret — findes kun i
-hukommelsen, mens du spiller. Luk appen midt i et spil, og det bræt er væk; det skrives
-aldrig til disken, og der er ingen autogem-funktion at genoptage et ufærdigt bræt fra. Kun et
-*afsluttet* spil (en sejr eller et nederlag) opdaterer rekorden pr. land, der er beskrevet
-ovenfor.
+hukommelsen, mens du spiller. Det gælder i alle tre verdener: kortet, **Classic**-tilstand og
+**Infinite Tower**. Luk appen midt i et spil, og det bræt er væk; det skrives aldrig til
+disken, og der er ingen autogem-funktion at genoptage et ufærdigt bræt fra. Kun et *afsluttet*
+spil (en sejr eller et nederlag) opdaterer rekorden pr. land eller Classic-historikken, der er
+beskrevet ovenfor.
 
 ## Det ene, der lyder som om det ikke er lokalt
 
@@ -73,14 +76,18 @@ anvendelsesbeskrivelses-punkt i den.
 
 ## Køb
 
-GeoSweeper er gratis at downloade. Dine første 10 lande — uanset niveau, Beginner inklusive —
-er gratis at spille, og når du først har spillet et land, forbliver det spilbart for evigt,
-også efter at den gratis prøveperiode er brugt op. Infinite Tower er gratis op til række 10.
-Ud over disse to punkter er der to uafhængige køb, begge engangskøb, ikke-forbrugbare, og
-udbudt gennem Apples StoreKit og behandlet udelukkende af Apple:
+GeoSweeper er gratis at downloade, og hver af dens tre verdener har sin egen gratis
+prøveperiode. Dine første 10 lande på kortet — uanset niveau, Beginner inklusive — er gratis
+at spille, og når du først har spillet et land, forbliver det spilbart for evigt, også efter
+at den prøveperiode er brugt op. **Classic**-tilstand giver dig 10 gratis spil på samme måde.
+Infinite Tower er gratis op til række 10. Ud over disse punkter er der tre uafhængige køb,
+alle engangskøb, ikke-forbrugbare, og udbudt gennem Apples StoreKit og behandlet udelukkende
+af Apple:
 
 - **All Countries** — et engangskøb, ikke-forbrugbart, der permanent låser Intermediate-,
   Expert- og Mega-niveauerne op for alle 204 lande. Intet af dette fornyes.
+- **Classic Lifetime** — et engangskøb, ikke-forbrugbart, der permanent låser op for
+  ubegrænsede Classic-spil, når dine 10 gratis er brugt op. Intet af dette fornyes.
 - **Infinite Tower Lifetime** — et engangskøb, ikke-forbrugbart, der permanent låser op for
   at klatre forbi række 10. Heller ikke dette fornyes, og GeoSweeper tilbyder intet abonnement
   af nogen art.
@@ -140,7 +147,8 @@ har på App Store.
 ## Opbevaring og sletning
 
 Sletning af appen sletter hver fil, den har gemt på din enhed — indstillinger, din rekord pr.
-land og dine Infinite Tower-fremskridt — øjeblikkeligt og fuldstændigt, fordi der aldrig var
+land, din Classic-historik og dine Infinite Tower-fremskridt — øjeblikkeligt og fuldstændigt,
+fordi der aldrig var
 en serverkopi, som vi kunne beholde eller slette på vores side. En iCloud-enhedsbackup lavet
 før sletningen kan stadig indeholde en kopi; den backup er helt under din kontrol via
 **Settings → dit navn → iCloud → Administrer kontolagerplads** på din enhed. Support-e-mails

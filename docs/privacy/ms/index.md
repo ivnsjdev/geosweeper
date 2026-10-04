@@ -2,7 +2,7 @@
 
 **Tarikh berkuatkuasa:** 26 September 2026
 
-**Terakhir dikemas kini:** 26 September 2026
+**Terakhir dikemas kini:** 4 Oktober 2026
 
 ## Versi pendek
 
@@ -21,7 +21,9 @@ Semua perkara di bawah hanya hidup pada peranti anda, di salah satu daripada tig
 | Tetapan paparan — tema papan, warna neon, kesan letupan, bunyi letupan, unjuran peta (glob atau rata), bunyi dan haptik hidup/mati | `UserDefaults` | Tidak |
 | Language yang telah anda pilih dalam apl | `UserDefaults` | Tidak |
 | Simpan kira kadar segera — tarikh GeoSweeper telah meminta iOS untuk menunjukkan helaian penilaian asli, dan peristiwa penting mana yang mencetuskan yang terakhir | `UserDefaults` | Tidak |
+| Pembilang permainan percuma — berapa banyak daripada 10 negara peta percuma dan 10 permainan Classic percuma anda yang telah digunakan | `UserDefaults` | Tidak |
 | Rekod setiap negara — menang, kalah, masa terbaik dan apabila anda membuka kuncinya, untuk setiap negara yang telah anda mainkan | Fail JSON (`progress.json`) dalam folder Sokongan Aplikasi apl | Tidak |
+| Sejarah mod Classic — saiz papan, kesukaran, bilangan lombong, masa dan menang-atau-kalah bagi setiap permainan Classic yang selesai | Fail JSON (`Classic/history.json`) dalam folder Sokongan Aplikasi apl | Tidak |
 | Kemajuan Infinite Tower — baris yang telah anda capai, port pandangan anda yang disimpan dan baris mana yang telah anda kosongkan | Pangkalan data SQLite tempatan | Tidak |
 
 Tiada satu pun daripada ini dihantar, dijual atau dikongsi dengan sesiapa sahaja, termasuk kami. Trafik StoreKit sendiri (di bawah) dan pautan luaran yang anda ketik (juga di bawah) tidak membawanya. Sandaran peranti iOS mungkin termasuk fail ini sebagai sebahagian daripada sandaran apl secara keseluruhan — sandaran itu dimulakan oleh anda atau oleh iOS, tidak sekali-kali oleh GeoSweeper, dan ia kekal di mana-mana sahaja anda menghantarnya (iCloud atau komputer anda), bukan dengan kami.
@@ -32,7 +34,7 @@ GeoSweeper tidak pernah meminta nama, alamat e-mel, nombor telefon, tarikh lahir
 
 ## Apa-apa pun sengaja tidak berterusan
 
-Papan yang anda berada di tengah-tengah — setiap jubin yang anda buka, setiap bendera yang anda letakkan — hanya disimpan dalam ingatan semasa anda bermain. Tutup apl pada pertengahan permainan dan papan itu hilang; ia tidak pernah ditulis pada cakera, dan tiada autosimpan untuk menyambung semula papan yang belum selesai. Hanya permainan *selesai* (menang atau kalah) mengemas kini rekod setiap negara yang diterangkan di atas.
+Papan yang anda berada di tengah-tengah — setiap jubin yang anda buka, setiap bendera yang anda letakkan — hanya disimpan dalam ingatan semasa anda bermain. Ini benar dalam ketiga-tiga dunia: peta, mod Classic dan Infinite Tower. Tutup apl pada pertengahan permainan dan papan itu hilang; ia tidak pernah ditulis pada cakera, dan tiada autosimpan untuk menyambung semula papan yang belum selesai. Hanya permainan *selesai* (menang atau kalah) mengemas kini rekod setiap negara atau sejarah Classic yang diterangkan di atas.
 
 ## Satu perkara yang kelihatan seperti ia bukan tempatan
 
@@ -44,10 +46,12 @@ GeoSweeper tidak meminta kebenaran sistem sama sekali. Ia tidak pernah meminta k
 
 ## Pembelian
 
-GeoSweeper adalah percuma untuk dimuat turun. 10 negara pertama anda — mana-mana peringkat, termasuk Beginner — adalah percuma untuk dimainkan dan sebaik sahaja anda bermain sesebuah negara, negara itu kekal boleh dimainkan semula untuk selama-lamanya, walaupun selepas percubaan percuma itu dibelanjakan. Infinite Tower adalah percuma sehingga baris 10. Di sebalik dua mata itu, terdapat dua pembelian bebas, kedua-duanya sekali, tidak boleh habis, dan ditawarkan melalui StoreKit Apple dan diproses sepenuhnya oleh Apple:
+GeoSweeper adalah percuma untuk dimuat turun, dan setiap satu daripada tiga dunianya mempunyai percubaan percuma tersendiri. 10 negara pertama anda pada peta — mana-mana peringkat, termasuk Beginner — adalah percuma untuk dimainkan dan sebaik sahaja anda bermain sesebuah negara, negara itu kekal boleh dimainkan semula untuk selama-lamanya, walaupun selepas percubaan itu dibelanjakan. Mod Classic memberi anda 10 permainan percuma dengan cara yang sama. Infinite Tower adalah percuma sehingga baris 10. Di sebalik titik-titik itu, terdapat tiga pembelian bebas, semuanya sekali, tidak boleh habis, dan ditawarkan melalui StoreKit Apple dan diproses sepenuhnya oleh Apple:
 
 - **All Countries** — pembelian sekali sahaja, tidak boleh habis yang membuka kunci secara kekal
   Peringkat Intermediate, Expert dan Mega merentas semua 204 negara. Tiada apa-apa tentang ini diperbaharui.
+- **Classic Lifetime** — pembelian sekali sahaja, tidak boleh habis yang membuka kunci secara kekal
+  permainan Classic tanpa had sebaik sahaja 10 permainan percuma anda dibelanjakan. Tiada apa-apa tentang ini diperbaharui.
 - **Infinite Tower Lifetime** — pembelian sekali sahaja, tidak boleh habis yang membuka kunci secara kekal
   mendaki melepasi baris 10. Tiada apa-apa tentang ini diperbaharui sama ada, dan GeoSweeper tidak menawarkan sebarang jenis langganan.
 
@@ -81,7 +85,7 @@ Ini sepadan dengan label "Data Not Collected (data tidak dikumpul)" GeoSweeper y
 
 ## Pengekalan dan pemadaman
 
-Memadamkan apl memadamkan setiap fail yang disimpan pada peranti anda — tetapan, rekod setiap negara anda dan kemajuan Infinite Tower anda — serta-merta dan sepenuhnya, kerana tidak pernah ada salinan pelayan untuk kami pegang atau dipadamkan di pihak kami. Sandaran peranti iCloud yang dibuat sebelum pemadaman mungkin masih mengandungi salinan; sandaran itu berada di bawah kawalan anda sepenuhnya melalui **Settings → nama anda → iCloud → Urus Storan Akaun** pada peranti anda. E-mel sokongan disimpan dan dipadam secara berasingan, seperti yang diterangkan di atas.
+Memadamkan apl memadamkan setiap fail yang disimpan pada peranti anda — tetapan, rekod setiap negara anda, sejarah Classic dan kemajuan Infinite Tower anda — serta-merta dan sepenuhnya, kerana tidak pernah ada salinan pelayan untuk kami pegang atau dipadamkan di pihak kami. Sandaran peranti iCloud yang dibuat sebelum pemadaman mungkin masih mengandungi salinan; sandaran itu berada di bawah kawalan anda sepenuhnya melalui **Settings → nama anda → iCloud → Urus Storan Akaun** pada peranti anda. E-mel sokongan disimpan dan dipadam secara berasingan, seperti yang diterangkan di atas.
 
 ## Hak anda
 

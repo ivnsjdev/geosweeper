@@ -2,7 +2,7 @@
 
 **Tanggal efektif:** 26 September 2026
 
-**Terakhir diperbarui:** 26 September 2026
+**Terakhir diperbarui:** 4 Oktober 2026
 
 ## Versi pendek
 
@@ -21,7 +21,9 @@ Segala sesuatu di bawah hanya ada di perangkat Anda, di salah satu dari tiga tem
 | Pengaturan tampilan — tema papan, warna neon, efek ledakan, suara ledakan, proyeksi peta (bola dunia atau datar), suara dan haptik aktif/nonaktif | `Default Pengguna` | Tidak |
 | Language yang Anda pilih di dalam aplikasi | `Default Pengguna` | Tidak |
 | Pembukuan berdasarkan peringkat — tanggal GeoSweeper meminta iOS untuk menampilkan lembar peringkat asli, dan pencapaian mana yang memicu lembar peringkat terakhir | `Default Pengguna` | Tidak |
+| Penghitung permainan gratis — berapa dari 10 negara gratis peta dan 10 permainan Classic gratis Anda yang telah Anda gunakan | `UserDefaults` | Tidak |
 | Rekor per negara — kemenangan, kekalahan, waktu terbaik, dan kapan Anda membukanya, untuk setiap negara yang Anda mainkan | File JSON (`progress.json`) di folder Dukungan Aplikasi aplikasi | Tidak |
+| Riwayat mode Classic — ukuran papan, tingkat kesulitan, jumlah ranjau, waktu, dan menang-atau-kalah dari setiap permainan Classic yang selesai | File JSON (`Classic/history.json`) di folder Dukungan Aplikasi aplikasi | Tidak |
 | Kemajuan Infinite Tower — baris yang telah Anda capai, area pandang yang disimpan, dan baris mana yang telah Anda kosongkan | Basis data SQLite lokal | Tidak |
 
 Semua ini tidak disebarkan, dijual, atau dibagikan kepada siapa pun, termasuk kami. Lalu lintas StoreKit sendiri (di bawah) dan tautan eksternal yang Anda ketuk (juga di bawah) tidak membawa apa pun. Pencadangan perangkat iOS dapat menyertakan file-file ini sebagai bagian dari pencadangan aplikasi secara keseluruhan — pencadangan tersebut dimulai oleh Anda atau oleh iOS, tidak pernah oleh GeoSweeper, dan cadangan tersebut tetap ada di mana pun Anda mengirimkannya (iCloud atau komputer Anda), bukan pada kami.
@@ -32,7 +34,7 @@ GeoSweeper tidak pernah menanyakan nama, alamat email, nomor telepon, tanggal la
 
 ## Apa pun yang sengaja tidak dipertahankan
 
-Papan tempat Anda berada — setiap ubin yang Anda buka, setiap bendera yang Anda tempatkan — hanya disimpan dalam memori saat Anda bermain. Tutup aplikasi di tengah permainan dan papan itu hilang; itu tidak pernah ditulis ke disk, dan tidak ada penyimpanan otomatis untuk melanjutkan papan yang belum selesai. Hanya permainan *selesai* (menang atau kalah) yang memperbarui rekor per negara yang dijelaskan di atas.
+Papan tempat Anda berada — setiap ubin yang Anda buka, setiap bendera yang Anda tempatkan — hanya disimpan dalam memori saat Anda bermain. Ini berlaku di ketiga dunia: peta, mode Classic, dan Infinite Tower. Tutup aplikasi di tengah permainan dan papan itu hilang; itu tidak pernah ditulis ke disk, dan tidak ada penyimpanan otomatis untuk melanjutkan papan yang belum selesai. Hanya permainan *selesai* (menang atau kalah) yang memperbarui rekor per negara atau riwayat Classic yang dijelaskan di atas.
 
 ## Satu hal yang sepertinya bukan hal lokal
 
@@ -44,10 +46,12 @@ GeoSweeper tidak meminta izin sistem apa pun. Itu tidak pernah meminta kamera, p
 
 ## Pembelian
 
-GeoSweeper gratis untuk diunduh. 10 negara pertama Anda — tingkat mana pun, termasuk Beginner — gratis untuk dimainkan, dan setelah Anda memainkan suatu negara, negara tersebut tetap dapat diputar ulang selamanya, bahkan setelah uji coba gratis tersebut habis. Infinite Tower gratis hingga baris 10. Di luar kedua poin tersebut, terdapat dua pembelian independen, keduanya satu kali, tidak dapat dikonsumsi, dan ditawarkan melalui StoreKit Apple dan diproses seluruhnya oleh Apple:
+GeoSweeper gratis untuk diunduh, dan masing-masing dari ketiga dunianya memiliki uji coba gratisnya sendiri. 10 negara pertama Anda di peta — tingkat mana pun, termasuk Beginner — gratis untuk dimainkan, dan setelah Anda memainkan suatu negara, negara tersebut tetap dapat diputar ulang selamanya, bahkan setelah uji coba tersebut habis. Mode Classic memberi Anda 10 permainan gratis dengan cara yang sama. Infinite Tower gratis hingga baris 10. Di luar poin-poin tersebut, terdapat tiga pembelian independen, semuanya satu kali, tidak dapat dikonsumsi, dan ditawarkan melalui StoreKit Apple dan diproses seluruhnya oleh Apple:
 
 - **All Countries** — pembelian satu kali yang tidak dapat dikonsumsi dan membuka kunci secara permanen
   Tingkat Intermediate, Expert, dan Mega di seluruh 204 negara. Tidak ada yang diperbarui tentang ini.
+- **Classic Lifetime** — pembelian satu kali yang tidak dapat dikonsumsi dan membuka kunci secara permanen
+  permainan Classic tanpa batas setelah 10 permainan gratis Anda habis. Tidak ada yang diperbarui tentang ini.
 - **Infinite Tower Lifetime** — pembelian satu kali yang tidak dapat dikonsumsi dan terbuka secara permanen
   memanjat melewati baris 10. Tidak ada pembaruan apa pun tentang ini, dan GeoSweeper tidak menawarkan langganan apa pun.
 
@@ -81,7 +85,7 @@ Ini cocok dengan label "Data Not Collected (data tidak dikumpulkan)" yang dibawa
 
 ## Retensi dan penghapusan
 
-Menghapus aplikasi akan menghapus setiap file yang tersimpan di perangkat Anda — pengaturan, catatan per negara, dan kemajuan Infinite Tower Anda — secara langsung dan menyeluruh, karena tidak pernah ada salinan server yang dapat kami simpan atau hapus di pihak kami. Cadangan perangkat iCloud yang dibuat sebelum penghapusan mungkin masih berisi salinan; pencadangan tersebut sepenuhnya berada di bawah kendali Anda melalui **Settings → nama Anda → iCloud → Kelola Penyimpanan Akun** di perangkat Anda. Email dukungan disimpan dan dihapus secara terpisah, seperti dijelaskan di atas.
+Menghapus aplikasi akan menghapus setiap file yang tersimpan di perangkat Anda — pengaturan, catatan per negara, riwayat Classic, dan kemajuan Infinite Tower Anda — secara langsung dan menyeluruh, karena tidak pernah ada salinan server yang dapat kami simpan atau hapus di pihak kami. Cadangan perangkat iCloud yang dibuat sebelum penghapusan mungkin masih berisi salinan; pencadangan tersebut sepenuhnya berada di bawah kendali Anda melalui **Settings → nama Anda → iCloud → Kelola Penyimpanan Akun** di perangkat Anda. Email dukungan disimpan dan dihapus secara terpisah, seperti dijelaskan di atas.
 
 ## Hak Anda
 

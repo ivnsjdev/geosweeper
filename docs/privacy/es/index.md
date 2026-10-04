@@ -2,7 +2,7 @@
 
 **Fecha de entrada en vigor:** 26 de septiembre de 2026
 
-**Última actualización:** 26 de septiembre de 2026
+**Última actualización:** 4 de octubre de 2026
 
 ## La versión resumida
 
@@ -30,7 +30,9 @@ Application Support propia de la app, o una base de datos SQLite local.
 | Ajustes de visualización — tema del tablero, color neón, efecto de explosión, sonido de impacto, proyección del mapa (**Globe** o **Flat**), sonido y hápticos activados/desactivados | `UserDefaults` | No |
 | Idioma que has elegido dentro de la app | `UserDefaults` | No |
 | Registro del aviso de valoración — las fechas en las que GeoSweeper le ha pedido a iOS que muestre la hoja de valoración nativa, y qué hito desencadenó la última | `UserDefaults` | No |
+| Contadores de partidas gratuitas — cuántos de tus 10 países gratuitos del mapa y tus 10 partidas gratuitas de **Classic** has usado | `UserDefaults` | No |
 | Registro por país — victorias, derrotas, mejor tiempo, y cuándo lo desbloqueaste, para cada país que has jugado | Un archivo JSON (`progress.json`) en la carpeta Application Support de la app | No |
+| Historial del modo **Classic** — el tamaño del tablero, la dificultad, el número de minas, el tiempo y la victoria o derrota de cada partida de Classic terminada | Un archivo JSON (`Classic/history.json`) en la carpeta Application Support de la app | No |
 | Progreso de **Infinite Tower** — la fila a la que has llegado, tu vista guardada, y qué filas has despejado | Una base de datos SQLite local | No |
 
 Nada de esto se transmite, se vende ni se comparte con nadie, incluidos nosotros. El propio
@@ -52,10 +54,11 @@ servidor desde la que sincronizar.
 ## Algo que deliberadamente no se guarda
 
 El tablero en el que estás a mitad de partida — cada casilla que has abierto, cada bandera que
-has colocado — se mantiene solo en memoria mientras juegas. Cierra la app a mitad de partida y
-ese tablero desaparece; nunca se escribe en disco, y no hay autoguardado desde el que retomar
-un tablero sin terminar. Solo una partida *terminada* (una victoria o una derrota) actualiza el
-registro por país descrito arriba.
+has colocado — se mantiene solo en memoria mientras juegas. Esto vale para los tres mundos: el
+mapa, el modo **Classic** e **Infinite Tower**. Cierra la app a mitad de partida y ese tablero
+desaparece; nunca se escribe en disco, y no hay autoguardado desde el que retomar un tablero
+sin terminar. Solo una partida *terminada* (una victoria o una derrota) actualiza el registro
+por país o el historial de Classic descritos arriba.
 
 ## Lo único que parece que no es local
 
@@ -75,14 +78,19 @@ sola entrada de descripción de uso en él.
 
 ## Compras
 
-GeoSweeper es gratis de descargar. Tus primeros 10 países — de cualquier nivel, incluido
-**Beginner** — son gratis de jugar, y una vez que has jugado un país queda disponible para
-siempre, incluso después de agotar esa prueba gratuita. **Infinite Tower** es gratis hasta la
-fila 10. Más allá de esos dos puntos, hay dos compras independientes, ambas de pago único, no
-consumibles, y ofrecidas a través de StoreKit de Apple y procesadas íntegramente por Apple:
+GeoSweeper es gratis de descargar, y cada uno de sus tres mundos tiene su propia prueba
+gratuita. Tus primeros 10 países del mapa — de cualquier nivel, incluido **Beginner** — son
+gratis de jugar, y una vez que has jugado un país queda disponible para siempre, incluso
+después de agotar esa prueba. El modo **Classic** te da 10 partidas gratuitas de la misma
+forma. **Infinite Tower** es gratis hasta la fila 10. Más allá de esos puntos, hay tres
+compras independientes, todas de pago único, no consumibles, y ofrecidas a través de StoreKit
+de Apple y procesadas íntegramente por Apple:
 
 - **All Countries** — una compra de pago único y no consumible que desbloquea de forma
   permanente los niveles **Intermediate**, **Expert** y **Mega** en los 204 países. Nada de
+  esto se renueva.
+- **Classic Lifetime** — una compra de pago único y no consumible que desbloquea de forma
+  permanente las partidas ilimitadas de Classic una vez agotadas tus 10 gratuitas. Nada de
   esto se renueva.
 - **Infinite Tower Lifetime** — una compra de pago único y no consumible que desbloquea de
   forma permanente subir más allá de la fila 10. Esto tampoco se renueva, y GeoSweeper no
@@ -144,7 +152,8 @@ lleva en la App Store.
 ## Conservación y eliminación
 
 Eliminar la app elimina todos los archivos que almacenó en tu dispositivo — ajustes, tu
-registro por país y tu progreso de Infinite Tower — de forma inmediata y completa, porque
+registro por país, tu historial del modo Classic y tu progreso de Infinite Tower — de forma
+inmediata y completa, porque
 nunca hubo una copia en un servidor que nosotros pudiéramos conservar ni eliminar por nuestra
 parte. Una copia de seguridad de iCloud hecha antes de la eliminación puede seguir
 conteniendo una copia; esa copia de seguridad está completamente bajo tu control a través de

@@ -1,8 +1,8 @@
 # GeoSweeper tuki
 
-**Viimeksi päivitetty:** 26. syyskuuta 2026
+**Viimeksi päivitetty:** 4. lokakuuta 2026
 
-GeoSweeper on klassinen Miinaharava, jota pelataan 204 maan todelliseen muotoon leikatuilla laudoilla sekä toinen, loputon tila nimeltä Infinite Tower. Se toistaa täysin offline-tilassa, pitää edistymisesi vain laitteellasi ja ei pyydä tiliä tai henkilökohtaisia ​​tietoja – katso [tietosuojakäytännöstä](../../privacy/fi/) kaikki tiedot.
+GeoSweeper on klassinen Miinaharava, jota pelataan 204 maan todelliseen muotoon leikatuilla laudoilla, sekä kaksi muuta maailmaa: Classic-tila, vapaamuotoinen Miinaharava millä tahansa laudan koolla ja vaikeustasolla, ja Infinite Tower, loputon kiipeily. Se toistaa täysin offline-tilassa, pitää edistymisesi vain laitteellasi ja ei pyydä tiliä tai henkilökohtaisia ​​tietoja – katso [tietosuojakäytännöstä](../../privacy/fi/) kaikki tiedot.
 
 <a id="contact"></a>
 ## Ota yhteyttä
@@ -18,7 +18,7 @@ Kirjoita numeroon **ivnsjdev@gmail.com**, niin vastaamme 2–3 arkipäivän kulu
 
 ### Mitä sisältyy
 
-GeoSweeper:ssä on kaksi maailmaa. **Globe** on 204 maata, joista jokainen on maan todellisen ääriviivan mukaan leikattu Miinaharava-kortti, joka on ryhmitelty neljään kokoon perustuvaan tasoon: **Beginner**, **Intermediate**, **Expert** ja **Mega**. **Infinite Tower** on toinen, erillinen maailma: loputon kiipeily, rivi kerrallaan, ilman karttaa. Settings-valikossa voit valita pelilaudan teeman (**Country themes**, **Classic** tai **Neon**), karttatyylin (**Globe** tai **Flat**), räjähdystehosteen (**Shockwave**, **Embers** tai **Chain**), räjähdysäänen, äänet ja tuntopalautteen sekä näyttökielen. **Your Record** näyttää voitot, tappiot, voittoprosentin ja parhaat ajat tasoittain ja maittain. **Countries** antaa sinun selata ja etsiä jokaista maata valmiiden tai jäljellä olevien maiden mukaan.
+GeoSweeper:ssä on kolme maailmaa. **Globe** on 204 maata, joista jokainen on maan todellisen ääriviivan mukaan leikattu Miinaharava-kortti, joka on ryhmitelty neljään kokoon perustuvaan tasoon: **Beginner**, **Intermediate**, **Expert** ja **Mega**. **Classic** on toinen maailma: vapaamuotoinen Miinaharava tavallisella suorakulmaisella laudalla, jossa valitset itse laudan koon ja yhden viidestä vaikeustasosta, **Easy**:stä **Insane**:een, ja johon kuuluu valmiiden peliesi **History**. **Infinite Tower** on kolmas, erillinen maailma: loputon kiipeily, rivi kerrallaan, ilman karttaa. Settings-valikossa voit valita pelilaudan teeman (**Country themes**, **Classic** tai **Neon**), karttatyylin (**Globe** tai **Flat**), räjähdystehosteen (**Shockwave**, **Embers** tai **Chain**), räjähdysäänen, äänet ja tuntopalautteen sekä näyttökielen. **Your Record** näyttää voitot, tappiot, voittoprosentin ja parhaat ajat tasoittain ja maittain. **Countries** antaa sinun selata ja etsiä jokaista maata valmiiden tai jäljellä olevien maiden mukaan.
 
 ### Laitteet ja suunnat
 
@@ -26,11 +26,15 @@ GeoSweeper tarvitsee iOS 17:n tai uudemman ja toimii iPhone:ssä ja iPadissa pys
 
 ### Mitä se maksaa?
 
-Ensimmäiset 10 maata, joissa pelaat, mistä tahansa tasosta, mukaan lukien Beginner, ovat ilmaisia ​​– ja kun olet pelannut maata, se pysyy toistettavissa ikuisesti, vaikka ilmainen kokeilujakso on kulunut. Myös Infinite Tower:n ensimmäiset 10 riviä ovat ilmaisia. Kaikki näiden kahden pisteen lisäksi on erillinen kertaostos – mikään GeoSweeper:ssä ei uusiudu tai laskuta automaattisesti, ja mitään ostamatonta ei koskaan laskuteta ilman Applen ostovahvistusta.
+Jokaisella kolmesta maailmasta on oma ilmainen kokeilujaksonsa. Ensimmäiset 10 maata, joissa pelaat, mistä tahansa tasosta, mukaan lukien Beginner, ovat ilmaisia ​​– ja kun olet pelannut maata, se pysyy toistettavissa ikuisesti, vaikka tämä kokeilujakso on kulunut. Classic-tila antaa sinulle 10 ilmaista peliä samalla tavalla. Myös Infinite Tower:n ensimmäiset 10 riviä ovat ilmaisia. Kaikki näiden pisteiden lisäksi on erillinen kertaostos – mikään GeoSweeper:ssä ei uusiudu tai laskuta automaattisesti, ja mitään ostamatonta ei koskaan laskuteta ilman Applen ostovahvistusta.
 
 ### Kartan muun osan lukituksen avaaminen
 
 **All Countries** on kertaostos, joka avaa pysyvästi Intermediate-, Expert- ja Mega-tasot jokaisessa maassa. Se ei uusiudu, eikä se ole tilaus – ostat sen kerran ja se on sinun.
+
+### Classic-tilan lukituksen avaaminen
+
+**Classic Lifetime** on kertaostos, joka avaa pysyvästi rajattomat Classic-pelit, kun 10 ilmaista peliäsi on käytetty. Se ei uusiudu, eikä se ole tilaus – ostat sen kerran ja se on sinun.
 
 ### Infinite Tower:n lukituksen avaaminen
 
@@ -60,13 +64,17 @@ GeoSweeper:llä on yleisen yleisön ikäluokitus. Sovelluksessa ei ole chattia, 
 
 Kunkin maan taulu luodaan sen todellisesta ääriviivasta - laatat ovat olemassa vain siellä, missä maa on, rannikot taivuttavat lautaa ja pienimmät saaret avautuvat jo maisemina. Taso (Beginner, Intermediate, Expert tai Mega) määräytyy maan koon mukaan, etkä ole itse valinnut sitä. Ratkaisija tarkistaa lähes jokaisen laudan, joten se voidaan tyhjentää pelkällä logiikalla, ja ensimmäinen napauksesi avautuu aina turvalliselle maalle – kaivos ei koskaan odota sen alla.
 
+### Kuinka Classic-tila toimii
+
+Classic on tavallinen Miinaharava, pelattuna omalla tavallasi. Asetat itse laudan leveyden ja korkeuden ja valitset yhden viidestä vaikeustasosta – **Easy**, **Medium**, **Hard**, **Expert** tai **Insane** – joka määrää, kuinka tiheästi lauta on miinoitettu. Kuten kartalla, jokainen lauta on rakennettu tyhjennettäväksi pelkällä logiikalla ja ensimmäinen napauksesi avautuu aina turvalliselle maalle. **History** säilyttää kunkin päättyneen pelin koon, vaikeustason, ajan ja tuloksen, vain laitteellesi tallennettuna. Ensimmäiset 10 Classic-peliäsi ovat ilmaisia; **Classic Lifetime** avaa rajattoman pelaamisen sen jälkeen.
+
 ### Kuinka Infinite Tower käytännössä toimii
 
 Avaa jokainen turvallinen ruutu peräkkäin avataksesi yllä olevan rivin; osui miinaan ja rivi alkaa alusta. Riviltä 100 ylöspäin miinaan osuminen kaataa sinut myös muutaman rivin alaspäin, ei vain nykyisen rivin huipulle – tämä kerrotaan tässä, koska se on helppo jättää väliin, kunnes se tapahtuu. Kaivostiheys kasvaa mitä korkeammalle kiipeät. Rivisi, näkymäsi ja tyhjennetyt rivisi tallennetaan jokaisen rivin jälkeen, joten sovelluksen sulkeminen ei koskaan maksa sinulle jo talletettua edistystä.
 
 ### Minne tiedot menivät
 
-Aktiivisesti ratkaisemasi taulu – jokainen laatta ja lippu – on olemassa vain muistissa, kun olet sillä. Sulje sovellus keskellä taulua ja se on poissa lopullisesti; vain päättynyt voitto tai tappio tallennetaan tietueeseesi. Mitään kumoamista tai automaattista tallennusta ei voi tehdä suunnittelun mukaan.
+Aktiivisesti ratkaisemasi taulu – jokainen laatta ja lippu – on olemassa vain muistissa, kun olet sillä, kaikissa kolmessa maailmassa. Sulje sovellus keskellä taulua ja se on poissa lopullisesti; vain päättynyt voitto tai tappio tallennetaan tietueeseesi tai Classic-historiaan. Mitään kumoamista tai automaattista tallennusta ei voi tehdä suunnittelun mukaan.
 
 ### Settings ja saavutettavuus
 
@@ -74,7 +82,7 @@ Aktiivisesti ratkaisemasi taulu – jokainen laatta ja lippu – on olemassa vai
 
 ### Uudelleenasennus ja tietojen häviäminen
 
-GeoSweeper:n poistaminen poistaa asetuksesi, maakohtaisen tietueen ja Infinite Tower:n edistymisen kyseiseltä laitteelta – palvelinkopiota ei ole palautettavissa myöhemmin. Ostokset ovat poikkeuksia: ne on sidottu Apple Account:ään, ja ne tulevat takaisin **Restore Purchases**:lla millä tahansa siihen kirjautuneella laitteella, asenna ne uudelleen tai et.
+GeoSweeper:n poistaminen poistaa asetuksesi, maakohtaisen tietueen, Classic-tilan historian ja Infinite Tower:n edistymisen kyseiseltä laitteelta – palvelinkopiota ei ole palautettavissa myöhemmin. Ostokset ovat poikkeuksia: ne on sidottu Apple Account:ään, ja ne tulevat takaisin **Restore Purchases**:lla millä tahansa siihen kirjautuneella laitteella, asenna ne uudelleen tai et.
 
 ## Virheet ja ominaisuuspyynnöt
 

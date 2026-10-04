@@ -1,11 +1,12 @@
 # Support for GeoSweeper
 
-**Sist oppdatert:** 26. september 2026
+**Sist oppdatert:** 4. oktober 2026
 
 GeoSweeper er klassisk minesveiper spilt på brett skåret til den virkelige formen av 204
-land, pluss en annen, endeløs modus kalt Infinite Tower. Den kjører helt offline, lagrer
-fremgangen din kun på enheten din, og krever ingen konto og ingen personopplysninger — se
-[Personvernerklæringen](../../privacy/nb/) for alle detaljer.
+land, pluss to verdener til: Classic-modus, friform minesveiper på hvilken som helst
+brettstørrelse og vanskelighetsgrad, og Infinite Tower, en endeløs klatring. Den kjører helt
+offline, lagrer fremgangen din kun på enheten din, og krever ingen konto og ingen
+personopplysninger — se [Personvernerklæringen](../../privacy/nb/) for alle detaljer.
 
 <a id="contact"></a>
 ## Kontakt
@@ -22,10 +23,13 @@ med det samme, ta gjerne med:
 
 ### Hva er inkludert
 
-GeoSweeper har to verdener. **Globe** er 204 land, der hvert land er et minesveiper-brett
+GeoSweeper har tre verdener. **Globe** er 204 land, der hvert land er et minesveiper-brett
 skåret til landets virkelige omriss, gruppert i fire størrelsesbaserte nivåer: **Beginner**,
-**Intermediate**, **Expert** og **Mega**. **Infinite Tower** er en annen, separat verden: en
-endeløs klatring, én rad om gangen, uten kart. Settings dekker bretttema (**Country themes**,
+**Intermediate**, **Expert** og **Mega**. **Classic** er en annen verden: friform minesveiper
+på et vanlig rektangulært brett, der du velger brettstørrelsen selv og en av fem
+vanskelighetsgrader, **Easy** til **Insane**, med en **History** over de fullførte spillene
+dine. **Infinite Tower** er en tredje, separat verden: en endeløs klatring, én rad om gangen,
+uten kart. Settings dekker bretttema (**Country themes**,
 **Classic** eller **Neon**), kartstil (**Globe** eller **Flat**), eksplosjonseffekt
 (**Shockwave**, **Embers** eller **Chain**), smellyd, lyd og haptikk, samt visningsspråket
 ditt. **Your Record** viser seire, tap, seiersrate og beste tider, per nivå og per land.
@@ -39,18 +43,25 @@ retning.
 
 ### Hva koster det?
 
-De første 10 landene du spiller, fra hvilket som helst nivå inkludert Beginner, er gratis —
-og når du først har spilt et land, forblir det spillbart for godt, selv etter at den gratis
-prøveperioden er brukt opp. Infinite Towers første 10 rader er også gratis. Alt utover disse
-to punktene er et separat engangskjøp — ingenting i GeoSweeper fornyes eller belastes
-automatisk, og ingenting du ikke har kjøpt, blir noensinne belastet uten en kjøpsbekreftelse
-fra Apple først.
+Hver av de tre verdenene har sin egen gratis prøveperiode. De første 10 landene du spiller,
+fra hvilket som helst nivå inkludert Beginner, er gratis — og når du først har spilt et land,
+forblir det spillbart for godt, selv etter at den prøveperioden er brukt opp. Classic-modus
+gir deg 10 gratis spill på samme måte. Infinite Towers første 10 rader er også gratis. Alt
+utover disse punktene er et separat engangskjøp — ingenting i GeoSweeper fornyes eller
+belastes automatisk, og ingenting du ikke har kjøpt, blir noensinne belastet uten en
+kjøpsbekreftelse fra Apple først.
 
 ### Låse opp resten av kartet
 
 **All Countries** er et enkelt engangskjøp som permanent låser opp Intermediate-, Expert- og
 Mega-nivåene for hvert land. Det fornyes ikke og er ikke et abonnement — du kjøper det én
 gang, og det er ditt.
+
+### Låse opp Classic-modus
+
+**Classic Lifetime** er et enkelt engangskjøp som permanent låser opp ubegrensede
+Classic-spill når dine 10 gratis er brukt opp. Det fornyes ikke og er ikke et abonnement — du
+kjøper det én gang, og det er ditt.
 
 ### Låse opp Infinite Tower
 
@@ -97,6 +108,16 @@ Nivået (Beginner, Intermediate, Expert eller Mega) bestemmes av landets større
 deg. Nesten hvert brett kontrolleres av en løser slik at det kan fullføres med logikk alene,
 og ditt første trykk åpner alltid trygg grunn — en mine venter aldri under det.
 
+### Slik fungerer Classic-modus
+
+Classic er vanlig minesveiper, spilt på din måte. Du angir brettets bredde og høyde selv og
+velger en av fem vanskelighetsgrader — **Easy**, **Medium**, **Hard**, **Expert** eller
+**Insane** — som bestemmer hvor tett brettet er minelagt. Som på kartet er hvert brett bygget
+for å kunne fullføres med logikk alene, og ditt første trykk åpner alltid trygg grunn.
+**History** beholder størrelsen, vanskelighetsgraden, tiden og resultatet for hvert fullført
+spill, lagret kun på enheten din. De første 10 Classic-spillene dine er gratis;
+**Classic Lifetime** låser opp ubegrenset spill etter det.
+
 ### Slik fungerer Infinite Tower egentlig
 
 Åpne hver trygge rute i en rad for å låse opp raden over; treff en mine, og den raden starter
@@ -107,10 +128,10 @@ etter hver rad, så det koster deg aldri fremgang du allerede har sikret å lukk
 
 ### Hvor ble dataene av
 
-Brettet du aktivt løser — hver rute og hvert flagg — finnes bare i minnet mens du er på det.
-Lukk appen midt i et brett, og det brettet er borte for godt; bare en fullført seier eller et
-tap lagres til rekorden din. Det finnes ingen angre-funksjon og ingen autolagringsfunksjon
-midt i et brett, med hensikt.
+Brettet du aktivt løser — hver rute og hvert flagg — finnes bare i minnet mens du er på det,
+i alle tre verdener. Lukk appen midt i et brett, og det brettet er borte for godt; bare en
+fullført seier eller et tap lagres til rekorden din eller Classic-historikken. Det finnes
+ingen angre-funksjon og ingen autolagringsfunksjon midt i et brett, med hensikt.
 
 ### Innstillinger og tilgjengelighet
 
@@ -122,9 +143,9 @@ telefonens språk ikke GeoSweeper bort under deg.
 
 ### Ominstallering og datatap
 
-Å slette GeoSweeper sletter innstillingene dine, rekorden din per land og Infinite
-Tower-fremgangen din fra den enheten — det finnes ingen serverkopi å gjenopprette fra
-etterpå. Kjøp er unntaket: de er knyttet til Apple-kontoen din og kommer tilbake med
+Å slette GeoSweeper sletter innstillingene dine, rekorden din per land,
+Classic-modushistorikken din og Infinite Tower-fremgangen din fra den enheten — det finnes
+ingen serverkopi å gjenopprette fra etterpå. Kjøp er unntaket: de er knyttet til Apple-kontoen din og kommer tilbake med
 **Restore Purchases** på enhver enhet logget inn med den, ominstallering eller ikke.
 
 ## Feil og funksjonsforslag

@@ -1,9 +1,10 @@
 # Soporte de GeoSweeper
 
-**Última actualización:** 26 de septiembre de 2026
+**Última actualización:** 4 de octubre de 2026
 
 GeoSweeper es el clásico Buscaminas jugado en tableros recortados con la forma real de 204
-países, más un segundo modo interminable llamado **Infinite Tower**. Funciona completamente
+países, más dos mundos adicionales: el modo **Classic**, Buscaminas libre en cualquier tamaño
+de tablero y dificultad, e **Infinite Tower**, una subida interminable. Funciona completamente
 sin conexión, guarda tu progreso solo en tu dispositivo, y no pide ninguna cuenta ni ninguna
 información personal — consulta la [Política de Privacidad](../../privacy/es/) para todos los
 detalles.
@@ -23,10 +24,13 @@ obtener una respuesta útil desde el primer mensaje, incluye:
 
 ### Qué incluye
 
-GeoSweeper tiene dos mundos. **Globe** son 204 países, cada uno un tablero de Buscaminas
+GeoSweeper tiene tres mundos. **Globe** son 204 países, cada uno un tablero de Buscaminas
 recortado con el contorno real de ese país, agrupados en cuatro niveles según su tamaño:
-**Beginner**, **Intermediate**, **Expert** y **Mega**. **Infinite Tower** es un segundo mundo,
-independiente: una subida interminable, una fila a la vez, sin mapa. Settings incluye el tema
+**Beginner**, **Intermediate**, **Expert** y **Mega**. **Classic** es un segundo mundo:
+Buscaminas libre en un tablero rectangular sencillo, donde eliges tú mismo el tamaño del
+tablero y una de cinco dificultades, de **Easy** a **Insane**, con un **History** de tus
+partidas terminadas. **Infinite Tower** es un tercer mundo, independiente: una subida
+interminable, una fila a la vez, sin mapa. Settings incluye el tema
 del tablero (**Country themes**, **Classic**, o **Neon**), el estilo del mapa (**Globe** o
 **Flat**), el efecto de explosión (**Shockwave**, **Embers**, o **Chain**), el sonido de
 impacto, el sonido y los hápticos, y tu idioma de visualización. **Your Record** muestra
@@ -40,18 +44,25 @@ horizontal.
 
 ### ¿Cuánto cuesta?
 
-Los primeros 10 países que juegas, de cualquier nivel incluido **Beginner**, son gratis — y
-una vez que has jugado un país queda disponible para siempre, incluso después de agotar esa
-prueba gratuita. Las primeras 10 filas de Infinite Tower también son gratis. Todo lo que va
-más allá de esos dos puntos es una compra independiente y de pago único — nada en GeoSweeper
-se renueva ni se cobra automáticamente, y nada que no hayas comprado se cobra jamás sin una
-confirmación de compra de Apple primero.
+Cada uno de los tres mundos tiene su propia prueba gratuita. Los primeros 10 países que
+juegas, de cualquier nivel incluido **Beginner**, son gratis — y una vez que has jugado un
+país queda disponible para siempre, incluso después de agotar esa prueba. El modo **Classic**
+te da 10 partidas gratuitas de la misma forma. Las primeras 10 filas de Infinite Tower también
+son gratis. Todo lo que va más allá de esos puntos es una compra independiente y de pago
+único — nada en GeoSweeper se renueva ni se cobra automáticamente, y nada que no hayas
+comprado se cobra jamás sin una confirmación de compra de Apple primero.
 
 ### Desbloquear el resto del mapa
 
 **All Countries** es una única compra de pago único que desbloquea de forma permanente los
 niveles **Intermediate**, **Expert** y **Mega** para todos los países. No se renueva y no es
 una suscripción — la compras una vez y es tuya.
+
+### Desbloquear el modo Classic
+
+**Classic Lifetime** es una única compra de pago único que desbloquea de forma permanente las
+partidas ilimitadas de Classic una vez agotadas tus 10 gratuitas. No se renueva y no es una
+suscripción — la compras una vez y es tuya.
 
 ### Desbloquear Infinite Tower
 
@@ -71,8 +82,7 @@ bloqueado, escríbenos con tu dispositivo y qué compra era.
 
 No. Las compras están vinculadas a tu cuenta de Apple, no a los archivos locales de la app,
 así que Restore Purchases las recupera en una instalación nueva. Tu registro por país y tu
-progreso de Infinite Tower, en cambio, son locales al dispositivo — reinstalar los borra, igual
-que borraría cualquier archivo.
+progreso de Infinite Tower, en cambio, son locales al dispositivo — reinstalar los borra, igual que borraría cualquier archivo.
 
 ### Reembolsos
 
@@ -100,6 +110,16 @@ país, no tú. Casi todos los tableros se comprueban con un solucionador para qu
 resolverse solo con lógica, y tu primer toque siempre cae en terreno seguro — nunca hay una
 mina esperando debajo.
 
+### Cómo funciona el modo Classic
+
+Classic es Buscaminas sencillo, jugado a tu manera. Tú fijas el ancho y el alto del tablero y
+eliges una de cinco dificultades — **Easy**, **Medium**, **Hard**, **Expert** o **Insane** —
+que determina lo densamente minado que está el tablero. Igual que en el mapa, cada tablero se
+construye para poder resolverse solo con lógica y tu primer toque siempre cae en terreno
+seguro. **History** guarda el tamaño, la dificultad, el tiempo y el resultado de cada partida
+terminada, almacenados solo en tu dispositivo. Tus primeras 10 partidas de Classic son gratis;
+**Classic Lifetime** desbloquea el juego ilimitado después.
+
 ### Cómo funciona realmente Infinite Tower
 
 Abre todas las casillas seguras de una fila para desbloquear la fila de arriba; toca una mina
@@ -112,9 +132,10 @@ la app nunca te cuesta el progreso que ya tenías guardado.
 ### A dónde fueron los datos
 
 El tablero que estás resolviendo activamente — cada casilla y bandera — existe solo en
-memoria mientras estás en él. Cierra la app a mitad de un tablero y ese tablero desaparece
-para siempre; solo una victoria o derrota terminada se guarda en tu registro. No hay deshacer
-ni autoguardado a mitad de tablero, por diseño.
+memoria mientras estás en él, en los tres mundos. Cierra la app a mitad de un tablero y ese
+tablero desaparece para siempre; solo una victoria o derrota terminada se guarda en tu
+registro o en el historial de Classic. No hay deshacer ni autoguardado a mitad de tablero,
+por diseño.
 
 ### Ajustes y accesibilidad
 
@@ -127,8 +148,8 @@ teléfono después no moverá GeoSweeper de debajo de ti.
 
 ### Reinstalar y pérdida de datos
 
-Eliminar GeoSweeper elimina tus ajustes, tu registro por país y tu progreso de Infinite Tower
-de ese dispositivo — no hay ninguna copia en un servidor desde la que restaurarlos después.
+Eliminar GeoSweeper elimina tus ajustes, tu registro por país, tu historial del modo Classic
+y tu progreso de Infinite Tower de ese dispositivo — no hay ninguna copia en un servidor desde la que restaurarlos después.
 Las compras son la excepción: están vinculadas a tu cuenta de Apple y vuelven con **Restore
 Purchases** en cualquier dispositivo con la sesión iniciada en ella, sea una reinstalación o
 no.

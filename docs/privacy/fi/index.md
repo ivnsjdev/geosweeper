@@ -2,7 +2,7 @@
 
 **Voimaantulopäivä:** 26.9.2026
 
-**Viimeksi päivitetty:** 26. syyskuuta 2026
+**Viimeksi päivitetty:** 4. lokakuuta 2026
 
 ## Lyhyt versio
 
@@ -21,7 +21,9 @@ Kaikki alla oleva säilyy vain laitteessasi yhdessä kolmesta paikasta: UserDefa
 | Näyttöasetukset — tauluteema, neonväri, räjähdystehoste, räjähdysääni, karttaprojektio (maapallo tai tasainen), ääni ja haptiikka päälle/pois | `UserDefaults` | Ei |
 | Language, jonka olet valinnut sovelluksen sisällä | `UserDefaults` | Ei |
 | Luokituksen mukainen kirjanpito – päivämäärät, jotka GeoSweeper on pyytänyt iOS:ää näyttämään alkuperäisen luokitustaulukon ja mikä virstanpylväs laukaisi viimeisen | `UserDefaults` | Ei |
+| Ilmaispelilaskurit – kuinka monta kartan 10 ilmaisesta maastasi ja 10 ilmaisesta Classic-pelistäsi olet käyttänyt | `UserDefaults` | Ei |
 | Maakohtainen ennätys – voitot, tappiot, paras aika ja kun avasit sen, jokaisessa maassa, jossa olet pelannut | JSON-tiedosto (`progress.json`) sovelluksen Application Support -kansiossa | Ei |
+| Classic-tilan historia – kunkin päättyneen Classic-pelin laudan koko, vaikeustaso, miinamäärä, aika ja voitto tai tappio | JSON-tiedosto (`Classic/history.json`) sovelluksen Application Support -kansiossa | Ei |
 | Infinite Tower edistyminen — rivi, jonka olet saavuttanut, tallennettu näkymä ja tyhjentämäsi rivit | Paikallinen SQLite-tietokanta | Ei |
 
 Mitään näistä ei lähetetä, myydä tai jaeta kenenkään kanssa, mukaan lukien meille. StoreKit:n oma liikenne (alla) ja napauttamasi ulkoiset linkit (myös alla) eivät sisällä sitä. iOS-laitteen varmuuskopio voi sisältää nämä tiedostot osana koko sovelluksen varmuuskopiointia – varmuuskopioinnin aloitat sinä tai iOS, ei koskaan GeoSweeper, ja se säilyy minne tahansa lähetät sen (iCloud tai tietokoneellesi), ei meidän kanssamme.
@@ -32,7 +34,7 @@ GeoSweeper ei koskaan kysy nimeä, sähköpostiosoitetta, puhelinnumeroa, syntym
 
 ## Kaikki, mitä ei tietoisesti säilynyt
 
-Lauta, jonka keskellä olet – jokainen avaamasi laatta, jokainen asettamasi lippu – säilyy vain muistissa pelatessasi. Sulje sovellus kesken pelin ja lauta on poissa. sitä ei koskaan kirjoiteta levylle, eikä siinä ole automaattista tallennusta keskeneräisen levyn jatkamiseksi. Vain *valmis* peli (voitto tai tappio) päivittää edellä kuvatun maakohtaisen ennätyksen.
+Lauta, jonka keskellä olet – jokainen avaamasi laatta, jokainen asettamasi lippu – säilyy vain muistissa pelatessasi. Tämä pätee kaikissa kolmessa maailmassa: kartalla, Classic-tilassa ja Infinite Tower:ssa. Sulje sovellus kesken pelin ja lauta on poissa. sitä ei koskaan kirjoiteta levylle, eikä siinä ole automaattista tallennusta keskeneräisen levyn jatkamiseksi. Vain *valmis* peli (voitto tai tappio) päivittää edellä kuvatun maakohtaisen ennätyksen tai Classic-historian.
 
 ## Yksi asia, joka kuulostaa siltä, että se ei ole paikallinen
 
@@ -44,10 +46,12 @@ GeoSweeper ei pyydä mitään järjestelmän käyttöoikeuksia. Se ei koskaan ky
 
 ## Ostokset
 
-GeoSweeper on ladattavissa ilmaiseksi. Ensimmäiset 10 maatasi – mikä tahansa taso, mukaan lukien Beginner – ovat ilmaisia, ja kun olet pelannut maata, se pysyy toistettavissa lopullisesti, jopa ilmaisen kokeilujakson jälkeen. Infinite Tower on ilmainen riville 10 asti. Näiden kahden pisteen lisäksi on kaksi erillistä ostoa, molemmat kertaluonteisia, ei-kulutustuotteita, jotka tarjotaan Applen StoreKit:n kautta ja jotka Apple käsittelee kokonaan:
+GeoSweeper on ladattavissa ilmaiseksi, ja jokaisella sen kolmesta maailmasta on oma ilmainen kokeilujaksonsa. Ensimmäiset 10 maatasi kartalla – mikä tahansa taso, mukaan lukien Beginner – ovat ilmaisia, ja kun olet pelannut maata, se pysyy toistettavissa lopullisesti, jopa tämän kokeilujakson jälkeen. Classic-tila antaa sinulle 10 ilmaista peliä samalla tavalla. Infinite Tower on ilmainen riville 10 asti. Näiden pisteiden lisäksi on kolme erillistä ostoa, kaikki kertaluonteisia, ei-kulutustuotteita, jotka tarjotaan Applen StoreKit:n kautta ja jotka Apple käsittelee kokonaan:
 
 - **All Countries** – kertaluonteinen, ei-kuluva ostos, joka avaa pysyvästi
   Intermediate-, Expert- ja Mega-tasot kaikissa 204 maassa. Mikään tästä ei uusiudu.
+- **Classic Lifetime** – kertaluonteinen, ei-kuluva ostos, joka avaa pysyvästi
+  rajattomat Classic-pelit, kun 10 ilmaista peliäsi on käytetty. Mikään tästä ei uusiudu.
 - **Infinite Tower Lifetime** – kertaluonteinen, ei-kuluva ostos, joka avaa lukituksen pysyvästi
   kiipeäminen rivin 10 ohi. Tämäkään ei uusiudu, eikä GeoSweeper tarjoa minkäänlaista tilausta.
 
@@ -81,7 +85,7 @@ Tämä vastaa "Data Not Collected (tietoja ei kerätä)" -merkkiä, jonka GeoSwe
 
 ## Säilyttäminen ja poistaminen
 
-Sovelluksen poistaminen poistaa kaikki laitteellesi tallennetut tiedostot – asetukset, maakohtaiset tietueesi ja Infinite Tower:n edistyminen – välittömästi ja kokonaan, koska meillä ei koskaan ollut palvelinkopiota, jota voisimme säilyttää tai poistaa. Ennen poistamista tehty iCloud-laitteen varmuuskopio saattaa silti sisältää kopion; että varmuuskopiointi on täysin sinun hallinnassasi laitteesi **Settings → nimesi → iCloud → Hallinnoi tilin tallennustilaa** kautta. Tukiviestit säilytetään ja poistetaan erikseen yllä kuvatulla tavalla.
+Sovelluksen poistaminen poistaa kaikki laitteellesi tallennetut tiedostot – asetukset, maakohtaiset tietueesi, Classic-historian ja Infinite Tower:n edistyminen – välittömästi ja kokonaan, koska meillä ei koskaan ollut palvelinkopiota, jota voisimme säilyttää tai poistaa. Ennen poistamista tehty iCloud-laitteen varmuuskopio saattaa silti sisältää kopion; että varmuuskopiointi on täysin sinun hallinnassasi laitteesi **Settings → nimesi → iCloud → Hallinnoi tilin tallennustilaa** kautta. Tukiviestit säilytetään ja poistetaan erikseen yllä kuvatulla tavalla.
 
 ## Sinun oikeutesi
 

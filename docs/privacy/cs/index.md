@@ -2,7 +2,7 @@
 
 **Datum účinnosti:** 26. září 2026
 
-**Poslední aktualizace:** 26. září 2026
+**Poslední aktualizace:** 4. října 2026
 
 ## Krátká verze
 
@@ -21,7 +21,9 @@ Vše níže žije pouze ve vašem zařízení, na jednom ze tří míst: „User
 | Nastavení zobrazení — motiv desky, neonová barva, efekt exploze, zvuk výbuchu, projekce mapy (zeměkoule nebo plochá), zapnutí/vypnutí zvuku a haptiky | `UserDefaults` | Ne |
 | Language jste si vybrali v aplikaci | `UserDefaults` | Ne |
 | Vedení účetnictví na základě hodnocení – data, kdy GeoSweeper požádal iOS o zobrazení nativního listu hodnocení, a který milník spustil ten poslední | `UserDefaults` | Ne |
+| Počitadla her zdarma – kolik z vašich 10 bezplatných zemí na mapě a 10 bezplatných her Classic jste využili | `UserDefaults` | Ne |
 | Rekord v jednotlivých zemích – výhry, prohry, nejlepší čas a když jste jej odemkli, pro každou zemi, ve které jste hráli | Soubor JSON (`progress.json`) ve složce Application Support | Ne |
+| Historie režimu Classic – velikost desky, obtížnost, počet min, čas a výhra či prohra každé dokončené hry Classic | Soubor JSON (`Classic/history.json`) ve složce Application Support | Ne |
 | Průběh Infinite Tower — řádek, kterého jste dosáhli, váš uložený výřez a které řádky jste vymazali | Lokální databáze SQLite | Ne |
 
 Nic z toho není přenášeno, prodáváno ani sdíleno s nikým, včetně nás. Vlastní provoz StoreKit (níže) a externí odkazy, na které klepnete (také níže), nic z toho nenesou. Záloha zařízení iOS může obsahovat tyto soubory jako součást zálohování aplikace jako celku – tuto zálohu iniciujete vy nebo iOS, nikdy GeoSweeper, a zůstane, kamkoli ji odešlete (iCloud nebo váš počítač), nikoli u nás.
@@ -32,7 +34,7 @@ GeoSweeper nikdy nepožaduje jméno, e-mailovou adresu, telefonní číslo, datu
 
 ## Cokoli úmyslně nepřetrvávalo
 
-Hrací deska, na které se nacházíte – každá dlaždice, kterou jste otevřeli, každá vlajka, kterou jste umístili – je během hraní uložena pouze v paměti. Zavřete aplikaci uprostřed hry a deska je pryč; nikdy se nezapisuje na disk a neexistuje žádné automatické ukládání, ze kterého by bylo možné obnovit nedokončenou desku. Pouze *dokončená* hra (výhra nebo prohra) aktualizuje výše popsaný rekord pro každou zemi.
+Hrací deska, na které se nacházíte – každá dlaždice, kterou jste otevřeli, každá vlajka, kterou jste umístili – je během hraní uložena pouze v paměti. To platí ve všech třech světech: na mapě, v režimu Classic a v Infinite Tower. Zavřete aplikaci uprostřed hry a deska je pryč; nikdy se nezapisuje na disk a neexistuje žádné automatické ukládání, ze kterého by bylo možné obnovit nedokončenou desku. Pouze *dokončená* hra (výhra nebo prohra) aktualizuje výše popsaný rekord pro každou zemi nebo historii Classic.
 
 ## Jedna věc, která zní, jako by to nebylo místní
 
@@ -44,10 +46,12 @@ GeoSweeper nevyžaduje žádná systémová oprávnění. Nikdy nepožaduje foto
 
 ## Nákupy
 
-GeoSweeper je zdarma ke stažení. Prvních 10 zemí – na jakékoli úrovni, včetně Beginner – lze hrát zdarma, a jakmile si zahrajete zemi, zůstane hratelná navždy i po uplynutí této bezplatné zkušební verze. Infinite Tower je zdarma až do řádku 10. Kromě těchto dvou bodů existují dva nezávislé nákupy, oba jednorázové, nespotřebovatelné a nabízené prostřednictvím StoreKit společnosti Apple a zcela zpracované společností Apple:
+GeoSweeper je zdarma ke stažení a každý z jeho tří světů má vlastní bezplatnou zkušební verzi. Prvních 10 zemí na mapě – na jakékoli úrovni, včetně Beginner – lze hrát zdarma, a jakmile si zahrajete zemi, zůstane hratelná navždy i po uplynutí této zkušební verze. Režim Classic vám stejným způsobem dává 10 her zdarma. Infinite Tower je zdarma až do řádku 10. Kromě těchto bodů existují tři nezávislé nákupy, všechny jednorázové, nespotřebovatelné a nabízené prostřednictvím StoreKit společnosti Apple a zcela zpracované společností Apple:
 
 - **All Countries** – jednorázový nákup bez spotřeby, který trvale odemkne
   Intermediate, Expert a Mega ve všech 204 zemích. Nic z toho se neobnovuje.
+- **Classic Lifetime** – jednorázový nákup bez spotřeby, který trvale odemkne
+  neomezené hry Classic, jakmile vyčerpáte svých 10 her zdarma. Nic z toho se neobnovuje.
 - **Infinite Tower Lifetime** – jednorázový nákup bez spotřeby, který se trvale odemkne
   lezení přes řadu 10. Nic o tom se také neobnovuje a GeoSweeper nenabízí žádné předplatné jakéhokoli druhu.
 
@@ -81,7 +85,7 @@ To odpovídá označení „Data Not Collected (údaje nejsou shromažďovány)�
 
 ## Uchování a smazání
 
-Smazáním aplikace dojde k okamžitému a úplnému odstranění všech souborů, které uložila ve vašem zařízení – nastavení, záznamů v jednotlivých zemích a pokroku v Infinite Tower, protože nikdy neexistovala kopie serveru, kterou bychom si mohli ponechat nebo z naší strany smazat. Záloha zařízení iCloud vytvořená před vymazáním může stále obsahovat kopii; tato záloha je zcela pod vaší kontrolou prostřednictvím **Settings → vaše jméno → iCloud → Správa úložiště účtu** na vašem zařízení. E-maily podpory jsou uchovávány a mazány samostatně, jak je popsáno výše.
+Smazáním aplikace dojde k okamžitému a úplnému odstranění všech souborů, které uložila ve vašem zařízení – nastavení, záznamů v jednotlivých zemích, historie Classic a pokroku v Infinite Tower, protože nikdy neexistovala kopie serveru, kterou bychom si mohli ponechat nebo z naší strany smazat. Záloha zařízení iCloud vytvořená před vymazáním může stále obsahovat kopii; tato záloha je zcela pod vaší kontrolou prostřednictvím **Settings → vaše jméno → iCloud → Správa úložiště účtu** na vašem zařízení. E-maily podpory jsou uchovávány a mazány samostatně, jak je popsáno výše.
 
 ## Vaše práva
 

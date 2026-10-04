@@ -1,9 +1,10 @@
 # Support til GeoSweeper
 
-**Sidst opdateret:** 26. september 2026
+**Sidst opdateret:** 4. oktober 2026
 
 GeoSweeper er klassisk minestryger spillet på brætter skåret til den virkelige form af 204
-lande, plus en anden, uendelig tilstand kaldet Infinite Tower. Den kører fuldt offline, gemmer
+lande, plus to verdener mere: Classic-tilstand, fri minestryger på enhver brætstørrelse og
+sværhedsgrad, og Infinite Tower, en uendelig klatretur. Den kører fuldt offline, gemmer
 kun dine fremskridt på din enhed, og kræver ingen konto og ingen personoplysninger — se
 [Privatlivspolitikken](../../privacy/da/) for alle detaljer.
 
@@ -22,10 +23,13 @@ svar med det samme, så inkluder gerne:
 
 ### Hvad er inkluderet
 
-GeoSweeper har to verdener. **Globe** er 204 lande, hvor hvert land er et
+GeoSweeper har tre verdener. **Globe** er 204 lande, hvor hvert land er et
 minestryger-bræt skåret til landets virkelige omrids, inddelt i fire størrelsesbaserede
-niveauer: **Beginner**, **Intermediate**, **Expert** og **Mega**. **Infinite Tower** er en
-anden, separat verden: en uendelig klatretur, én række ad gangen, uden kort. Settings dækker
+niveauer: **Beginner**, **Intermediate**, **Expert** og **Mega**. **Classic** er en anden
+verden: fri minestryger på et almindeligt rektangulært bræt, hvor du selv vælger brætstørrelsen
+og én af fem sværhedsgrader, **Easy** til **Insane**, med en **History** over dine gennemførte
+spil. **Infinite Tower** er en tredje, separat verden: en uendelig klatretur, én række ad
+gangen, uden kort. Settings dækker
 bræt-tema (**Country themes**, **Classic** eller **Neon**), kortstil (**Globe** eller
 **Flat**), eksplosionseffekt (**Shockwave**, **Embers** eller **Chain**), smældlyd, lyd og
 haptik, samt dit visningssprog. **Your Record** viser sejre, nederlag, sejrsrate og bedste
@@ -38,10 +42,11 @@ GeoSweeper kræver iOS 17 eller nyere og kører på iPhone og iPad, i portræt o
 
 ### Hvad koster det?
 
-De første 10 lande, du spiller, fra ethvert niveau inklusive Beginner, er gratis — og når du
-først har spillet et land, forbliver det spilbart for evigt, også efter at den gratis
-prøveperiode er brugt op. Infinite Towers første 10 rækker er også gratis. Alt ud over disse
-to punkter er et separat engangskøb — intet i GeoSweeper fornyes eller opkræves automatisk,
+Hver af de tre verdener har sin egen gratis prøveperiode. De første 10 lande, du spiller, fra
+ethvert niveau inklusive Beginner, er gratis — og når du først har spillet et land, forbliver
+det spilbart for evigt, også efter at den prøveperiode er brugt op. Classic-tilstand giver dig
+10 gratis spil på samme måde. Infinite Towers første 10 rækker er også gratis. Alt ud over
+disse punkter er et separat engangskøb — intet i GeoSweeper fornyes eller opkræves automatisk,
 og intet, du ikke har købt, opkræves nogensinde uden en købsbekræftelse fra Apple først.
 
 ### Lås resten af kortet op
@@ -49,6 +54,12 @@ og intet, du ikke har købt, opkræves nogensinde uden en købsbekræftelse fra 
 **All Countries** er et enkelt engangskøb, der permanent låser Intermediate-, Expert- og
 Mega-niveauerne op for hvert land. Det fornyes ikke og er ikke et abonnement — du køber det
 én gang, og det er dit.
+
+### Lås Classic-tilstand op
+
+**Classic Lifetime** er et enkelt engangskøb, der permanent låser op for ubegrænsede
+Classic-spil, når dine 10 gratis er brugt op. Det fornyes ikke og er ikke et abonnement — du
+køber det én gang, og det er dit.
 
 ### Lås Infinite Tower op
 
@@ -95,6 +106,16 @@ Niveauet (Beginner, Intermediate, Expert eller Mega) bestemmes af landets størr
 dig. Næsten hvert bræt tjekkes af en løser, så det kan gennemføres med logik alene, og dit
 første tryk åbner altid sikker grund — en mine venter aldrig under det.
 
+### Sådan fungerer Classic-tilstand
+
+Classic er almindelig minestryger, spillet på din måde. Du indstiller selv brættets bredde og
+højde og vælger én af fem sværhedsgrader — **Easy**, **Medium**, **Hard**, **Expert** eller
+**Insane** — som bestemmer, hvor tæt brættet er minelagt. Som på kortet er hvert bræt bygget
+til at kunne gennemføres med logik alene, og dit første tryk åbner altid sikker grund.
+**History** gemmer størrelsen, sværhedsgraden, tiden og resultatet af hvert gennemført spil,
+gemt kun på din enhed. Dine første 10 Classic-spil er gratis; **Classic Lifetime** låser op
+for ubegrænset spil derefter.
+
 ### Sådan fungerer Infinite Tower egentlig
 
 Åbn hvert sikkert felt i en række for at låse rækken ovenover op; ram en mine, og den række
@@ -107,9 +128,9 @@ at lukke appen.
 ### Hvor blev dataene af
 
 Brættet du aktivt løser — hver felt og hvert flag — findes kun i hukommelsen, mens du er i
-gang med det. Luk appen midt i et bræt, og det bræt er væk for altid; kun en gennemført sejr
-eller et nederlag gemmes til din rekord. Der er ingen fortryd-funktion og ingen
-autogem-funktion midt i et bræt, med vilje.
+gang med det, i alle tre verdener. Luk appen midt i et bræt, og det bræt er væk for altid; kun
+en gennemført sejr eller et nederlag gemmes til din rekord eller Classic-historik. Der er ingen
+fortryd-funktion og ingen autogem-funktion midt i et bræt, med vilje.
 
 ### Indstillinger og tilgængelighed
 
@@ -121,8 +142,9 @@ telefonens sprog ikke GeoSweeper væk under dig.
 
 ### Geninstallation og datatab
 
-Sletning af GeoSweeper sletter dine indstillinger, din rekord pr. land og dine Infinite
-Tower-fremskridt fra den enhed — der er ingen serverkopi at gendanne fra bagefter. Køb er
+Sletning af GeoSweeper sletter dine indstillinger, din rekord pr. land, din historik for
+Classic-tilstand og dine Infinite Tower-fremskridt fra den enhed — der er ingen serverkopi at
+gendanne fra bagefter. Køb er
 undtagelsen: de er knyttet til din Apple-konto og kommer tilbage med **Restore Purchases** på
 enhver enhed logget ind med den, geninstallation eller ej.
 

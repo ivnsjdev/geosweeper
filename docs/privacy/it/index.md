@@ -2,7 +2,7 @@
 
 **Data di entrata in vigore:** 26 settembre 2026
 
-**Ultimo aggiornamento:** 26 settembre 2026
+**Ultimo aggiornamento:** 4 ottobre 2026
 
 ## La versione breve
 
@@ -21,7 +21,9 @@ Tutto ciò che segue risiede solo sul tuo dispositivo, in uno dei tre posti: "Us
 | Impostazioni di visualizzazione: tema del tabellone, colore del neon, effetto esplosione, suono dell'esplosione, proiezione della mappa (globale o piatta), attivazione/disattivazione di suoni e aspetti tattili | "Impostazioni predefinite utente" | No |
 | Language che hai scelto all'interno dell'app | "Impostazioni predefinite utente" | No |
 | Contabilità con richiesta di valutazione: le date in cui GeoSweeper ha chiesto a iOS di mostrare la scheda di valutazione nativa e quale traguardo ha attivato l'ultima | "Impostazioni predefinite utente" | No |
+| Contatori delle partite gratuite: quanti dei tuoi 10 paesi gratuiti della mappa e delle tue 10 partite gratuite di **Classic** hai usato | "Impostazioni predefinite utente" | No |
 | Record per paese: vittorie, sconfitte, miglior tempo e quando lo hai sbloccato, per ogni paese in cui hai giocato | Un file JSON (`progress.json`) nella cartella Supporto applicazioni dell'app | No |
+| Cronologia della modalità **Classic**: la dimensione del tabellone, la difficoltà, il numero di mine, il tempo e la vittoria o la sconfitta di ogni partita di Classic terminata | Un file JSON (`Classic/history.json`) nella cartella Supporto applicazioni dell'app | No |
 | Avanzamento Infinite Tower: la riga che hai raggiunto, la visualizzazione salvata e le righe che hai cancellato | Un database SQLite locale | No |
 
 Niente di tutto questo viene trasmesso, venduto o condiviso con nessuno, incluso noi. Il traffico di StoreKit (sotto) e i collegamenti esterni che tocchi (sempre sotto) non ne trasportano nulla. Un backup del dispositivo iOS può includere questi file come parte del backup dell'app nel suo insieme: il backup viene avviato da te o da iOS, mai da GeoSweeper, e rimane ovunque lo invii (iCloud o il tuo computer), non con noi.
@@ -32,7 +34,7 @@ GeoSweeper non richiede mai nome, indirizzo email, numero di telefono, data di n
 
 ## Tutto ciò che deliberatamente non è persistito
 
-Il tabellone in cui ti trovi al centro (ogni tessera che hai aperto, ogni bandiera che hai posizionato) viene conservato solo nella memoria mentre giochi. Chiudi l'app a metà gioco e il tabellone non c'è più; non viene mai scritto su disco e non esiste un salvataggio automatico da cui riprendere una scheda incompleta. Solo una partita *finita* (una vittoria o una sconfitta) aggiorna il record per paese sopra descritto.
+Il tabellone in cui ti trovi al centro (ogni tessera che hai aperto, ogni bandiera che hai posizionato) viene conservato solo nella memoria mentre giochi. Questo vale per tutti e tre i mondi: la mappa, la modalità **Classic** e **Infinite Tower**. Chiudi l'app a metà gioco e il tabellone non c'è più; non viene mai scritto su disco e non esiste un salvataggio automatico da cui riprendere una scheda incompleta. Solo una partita *finita* (una vittoria o una sconfitta) aggiorna il record per paese o la cronologia di Classic sopra descritti.
 
 ## L'unica cosa che sembra non essere locale
 
@@ -44,10 +46,11 @@ GeoSweeper non richiede alcuna autorizzazione di sistema. Non richiede mai fotoc
 
 ## Acquisti
 
-GeoSweeper può essere scaricato gratuitamente. I tuoi primi 10 paesi, di qualsiasi livello, incluso Beginner, sono gratuiti e, una volta giocato in un paese, il gioco rimane rigiocabile per sempre, anche dopo aver trascorso la prova gratuita. Infinite Tower è gratuito fino alla riga 10. Oltre a questi due punti, ci sono due acquisti indipendenti, entrambi una tantum, non consumabili e offerti tramite StoreKit di Apple ed elaborati interamente da Apple:
+GeoSweeper può essere scaricato gratuitamente e ciascuno dei suoi tre mondi ha la propria prova gratuita. I tuoi primi 10 paesi sulla mappa, di qualsiasi livello, incluso Beginner, sono gratuiti e, una volta giocato in un paese, il gioco rimane rigiocabile per sempre, anche dopo aver trascorso quella prova. La modalità **Classic** ti offre 10 partite gratuite allo stesso modo. Infinite Tower è gratuito fino alla riga 10. Oltre a questi punti, ci sono tre acquisti indipendenti, tutti una tantum, non consumabili e offerti tramite StoreKit di Apple ed elaborati interamente da Apple:
 
-- **All Countries**: un acquisto una tantum non consumabile che sblocca in modo permanente il
-  Livelli Intermediate, Expert e Mega in tutti i 204 paesi. Niente di questo si rinnova.
+- **All Countries**: un acquisto una tantum non consumabile che sblocca in modo permanente i
+  livelli Intermediate, Expert e Mega in tutti i 204 paesi. Niente di questo si rinnova.
+- **Classic Lifetime**: un acquisto una tantum, non consumabile, che sblocca in modo permanente le partite illimitate di Classic una volta esaurite le tue 10 gratuite. Niente di questo si rinnova.
 - **Infinite Tower Lifetime**: un acquisto una tantum, non consumabile, che si sblocca in modo permanente
   salendo oltre la riga 10. Anche questo non si rinnova e GeoSweeper non offre abbonamenti di alcun tipo.
 
@@ -81,7 +84,7 @@ Questo corrisponde all'etichetta "Data Not Collected (dati non raccolti)" che Ge
 
 ## Conservazione e cancellazione
 
-L'eliminazione dell'app elimina tutti i file memorizzati sul tuo dispositivo (impostazioni, record per paese e progressi Infinite Tower) immediatamente e completamente, perché non abbiamo mai avuto una copia sul server da conservare o da eliminare da parte nostra. Un backup del dispositivo iCloud effettuato prima dell'eliminazione può ancora contenere una copia; quel backup è interamente sotto il tuo controllo tramite **Settings → il tuo nome → iCloud → Gestisci archiviazione account** sul tuo dispositivo. Le e-mail di supporto vengono conservate ed eliminate separatamente, come descritto sopra.
+L'eliminazione dell'app elimina tutti i file memorizzati sul tuo dispositivo (impostazioni, record per paese, cronologia della modalità Classic e progressi Infinite Tower) immediatamente e completamente, perché non abbiamo mai avuto una copia sul server da conservare o da eliminare da parte nostra. Un backup del dispositivo iCloud effettuato prima dell'eliminazione può ancora contenere una copia; quel backup è interamente sotto il tuo controllo tramite **Settings → il tuo nome → iCloud → Gestisci archiviazione account** sul tuo dispositivo. Le e-mail di supporto vengono conservate ed eliminate separatamente, come descritto sopra.
 
 ## I tuoi diritti
 

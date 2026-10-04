@@ -2,7 +2,7 @@
 
 **Ngày có hiệu lực:** 26 tháng 9 năm 2026
 
-**Cập nhật lần cuối:** Ngày 26 tháng 9 năm 2026
+**Cập nhật lần cuối:** Ngày 4 tháng 10 năm 2026
 
 ## Bản rút gọn
 
@@ -21,7 +21,9 @@ Mọi thứ bên dưới chỉ tồn tại trên thiết bị của bạn, ở m
 | Cài đặt hiển thị - chủ đề bảng, màu neon, hiệu ứng nổ, âm thanh vụ nổ, chiếu bản đồ (quả địa cầu hoặc phẳng), bật/tắt âm thanh và xúc giác | `Mặc định của người dùng` | Không |
 | Language bạn đã chọn trong ứng dụng | `Mặc định của người dùng` | Không |
 | Sổ sách kế toán nhắc xếp hạng - ngày GeoSweeper yêu cầu iOS hiển thị bảng xếp hạng gốc và cột mốc nào đã kích hoạt bảng xếp hạng cuối cùng | `Mặc định của người dùng` | Không |
+| Bộ đếm trò chơi miễn phí — bạn đã dùng bao nhiêu trong số 10 quốc gia bản đồ miễn phí và 10 trò chơi Classic miễn phí của mình | `UserDefaults` | Không |
 | Kỷ lục theo quốc gia — thắng, thua, thời điểm tốt nhất và thời điểm bạn mở khóa thành tích đó, đối với mọi quốc gia bạn đã chơi | Tệp JSON (`progress.json`) trong thư mục Hỗ trợ ứng dụng của ứng dụng | Không |
+| Lịch sử chế độ Classic — kích thước bảng, độ khó, số lượng mìn, thời gian và thắng-hay-thua của mỗi trò chơi Classic đã hoàn thành | Tệp JSON (`Classic/history.json`) trong thư mục Hỗ trợ ứng dụng của ứng dụng | Không |
 | Tiến trình Infinite Tower — hàng bạn đã tới, khung nhìn đã lưu của bạn và những hàng bạn đã xóa | Cơ sở dữ liệu SQLite cục bộ | Không |
 
 Không có điều nào trong số này được truyền đi, bán hoặc chia sẻ với bất kỳ ai, kể cả chúng tôi. Lưu lượng truy cập của chính StoreKit (bên dưới) và các liên kết bên ngoài bạn nhấn (cũng bên dưới) không chứa lưu lượng truy cập nào. Bản sao lưu thiết bị iOS có thể bao gồm các tệp này như một phần của việc sao lưu toàn bộ ứng dụng — bản sao lưu đó do bạn hoặc iOS khởi tạo, không bao giờ bởi GeoSweeper và nó vẫn ở bất cứ nơi nào bạn gửi (iCloud hoặc máy tính của bạn), không phải với chúng tôi.
@@ -32,7 +34,7 @@ GeoSweeper không bao giờ yêu cầu tên, địa chỉ email, số điện th
 
 ## Bất cứ điều gì cố tình không tồn tại
 
-Bàn cờ bạn đang ở giữa — mọi ô bạn đã mở, mọi lá cờ bạn đặt — chỉ được lưu giữ trong bộ nhớ khi bạn chơi. Đóng ứng dụng giữa trò chơi và bảng đó sẽ biến mất; nó không bao giờ được ghi vào đĩa và không có tính năng tự động lưu để tiếp tục một bảng chưa hoàn thành. Chỉ một trận đấu *kết thúc* (thắng hoặc thua) mới cập nhật thành tích của mỗi quốc gia được mô tả ở trên.
+Bàn cờ bạn đang ở giữa — mọi ô bạn đã mở, mọi lá cờ bạn đặt — chỉ được lưu giữ trong bộ nhớ khi bạn chơi. Điều này đúng ở cả ba thế giới: bản đồ, chế độ Classic và Infinite Tower. Đóng ứng dụng giữa trò chơi và bảng đó sẽ biến mất; nó không bao giờ được ghi vào đĩa và không có tính năng tự động lưu để tiếp tục một bảng chưa hoàn thành. Chỉ một trận đấu *kết thúc* (thắng hoặc thua) mới cập nhật thành tích của mỗi quốc gia hoặc lịch sử Classic được mô tả ở trên.
 
 ## Có một thứ nghe có vẻ không phải ở địa phương
 
@@ -44,10 +46,12 @@ GeoSweeper không yêu cầu bất kỳ quyền hệ thống nào. Nó không ba
 
 ## Mua hàng
 
-GeoSweeper được tải xuống miễn phí. 10 quốc gia đầu tiên của bạn — bất kỳ cấp độ nào, bao gồm Beginner — đều được chơi miễn phí và khi bạn đã chơi ở một quốc gia, quốc gia đó vẫn có thể chơi lại vĩnh viễn, ngay cả sau khi hết thời gian dùng thử miễn phí. Infinite Tower miễn phí tới hàng 10. Ngoài hai điểm đó, còn có hai giao dịch mua độc lập, cả hai đều là một lần, không tiêu hao và được cung cấp thông qua StoreKit của Apple và được Apple xử lý hoàn toàn:
+GeoSweeper được tải xuống miễn phí và mỗi thế giới trong ba thế giới của nó đều có bản dùng thử miễn phí riêng. 10 quốc gia đầu tiên của bạn trên bản đồ — bất kỳ cấp độ nào, bao gồm Beginner — đều được chơi miễn phí và khi bạn đã chơi ở một quốc gia, quốc gia đó vẫn có thể chơi lại vĩnh viễn, ngay cả sau khi hết thời gian dùng thử đó. Chế độ Classic cũng cho bạn 10 trò chơi miễn phí theo cách tương tự. Infinite Tower miễn phí tới hàng 10. Ngoài những điểm đó, còn có ba giao dịch mua độc lập, tất cả đều là một lần, không tiêu hao và được cung cấp thông qua StoreKit của Apple và được Apple xử lý hoàn toàn:
 
 - **All Countries** — giao dịch mua một lần, không tiêu hao để mở khóa vĩnh viễn
   Các cấp Intermediate, Expert và Mega trên tất cả 204 quốc gia. Không có gì về điều này đổi mới.
+- **Classic Lifetime** — giao dịch mua một lần, không tiêu hao để mở khóa vĩnh viễn
+  trò chơi Classic không giới hạn khi 10 trò chơi miễn phí của bạn đã dùng hết. Không có gì về điều này đổi mới.
 - **Infinite Tower Lifetime** — giao dịch mua một lần, không tiêu hao và mở khóa vĩnh viễn
   leo qua hàng 10. Không có gì về điều này được gia hạn và GeoSweeper không cung cấp bất kỳ hình thức đăng ký nào.
 
@@ -81,7 +85,7 @@ GeoSweeper không có tiền tệ trong ứng dụng, không có chiến lợi p
 
 ## Giữ lại và xóa
 
-Việc xóa ứng dụng sẽ xóa mọi tệp được lưu trữ trên thiết bị của bạn — cài đặt, hồ sơ theo quốc gia và tiến trình Infinite Tower của bạn — ngay lập tức và hoàn toàn, vì phía chúng tôi chưa bao giờ có bản sao máy chủ để chúng tôi giữ hoặc xóa. Bản sao lưu thiết bị iCloud được tạo trước khi xóa vẫn có thể chứa một bản sao; bản sao lưu đó hoàn toàn nằm dưới sự kiểm soát của bạn thông qua **Settings → tên của bạn → iCloud → Quản lý bộ nhớ tài khoản** trên thiết bị của bạn. Các email hỗ trợ được giữ lại và xóa riêng biệt như mô tả ở trên.
+Việc xóa ứng dụng sẽ xóa mọi tệp được lưu trữ trên thiết bị của bạn — cài đặt, hồ sơ theo quốc gia, lịch sử Classic và tiến trình Infinite Tower của bạn — ngay lập tức và hoàn toàn, vì phía chúng tôi chưa bao giờ có bản sao máy chủ để chúng tôi giữ hoặc xóa. Bản sao lưu thiết bị iCloud được tạo trước khi xóa vẫn có thể chứa một bản sao; bản sao lưu đó hoàn toàn nằm dưới sự kiểm soát của bạn thông qua **Settings → tên của bạn → iCloud → Quản lý bộ nhớ tài khoản** trên thiết bị của bạn. Các email hỗ trợ được giữ lại và xóa riêng biệt như mô tả ở trên.
 
 ## Quyền của bạn
 

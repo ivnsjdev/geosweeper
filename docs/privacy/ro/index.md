@@ -2,7 +2,7 @@
 
 **Data intrării în vigoare:** 26 septembrie 2026
 
-**Ultima actualizare:** 26 septembrie 2026
+**Ultima actualizare:** 4 octombrie 2026
 
 ## Versiunea pe scurt
 
@@ -21,7 +21,9 @@ Tot ce urmează există doar pe dispozitivul tău, în unul din trei locuri: `Us
 | Setări de afișare — temă tablă, culoare neon, efect de explozie, sunet de explozie, proiecție hartă (Globe sau Flat), sunet și vibrații pornite/oprite | `UserDefaults` | Nu |
 | Limba pe care ai ales-o în aplicație | `UserDefaults` | Nu |
 | Evidența solicitărilor de evaluare — datele la care GeoSweeper a cerut iOS-ului să afișeze fișa nativă de evaluare, și ce prag a declanșat ultima solicitare | `UserDefaults` | Nu |
+| Contoare de jocuri gratuite — câte dintre cele 10 țări gratuite de pe hartă și cele 10 jocuri Classic gratuite ai folosit | `UserDefaults` | Nu |
 | Recordul pe fiecare țară — victorii, înfrângeri, cel mai bun timp și când ai deblocat-o, pentru fiecare țară jucată | Un fișier JSON (`progress.json`) în folderul Application Support al aplicației | Nu |
+| Istoricul modului Classic — mărimea tablei, dificultatea, numărul de mine, timpul și victoria-sau-înfrângerea fiecărui joc Classic finalizat | Un fișier JSON (`Classic/history.json`) în folderul Application Support al aplicației | Nu |
 | Progresul în Infinite Tower — rândul la care ai ajuns, viewport-ul salvat și rândurile pe care le-ai finalizat | O bază de date locală SQLite | Nu |
 
 Niciuna dintre acestea nu este transmisă, vândută sau partajată cu nimeni, inclusiv cu noi. Propriul trafic al StoreKit (mai jos) și linkurile externe pe care le atingi (de asemenea mai jos) nu transportă nimic din acestea. O copie de rezervă a dispozitivului iOS poate include aceste fișiere ca parte a copierii de rezervă a întregii aplicații — acea copie de rezervă este inițiată de tine sau de iOS, niciodată de GeoSweeper, și rămâne oriunde o trimiți (iCloud sau calculatorul tău), nu la noi.
@@ -32,7 +34,7 @@ GeoSweeper nu cere niciodată un nume, o adresă de e-mail, un număr de telefon
 
 ## Ceva ce în mod deliberat nu este salvat
 
-Tabla în care te afli în acest moment — fiecare pătrat pe care l-ai deschis, fiecare steag pe care l-ai plasat — este păstrată doar în memorie cât timp joci. Închide aplicația la mijlocul unui joc și acea tablă dispare; nu este niciodată scrisă pe disc, și nu există o salvare automată pentru a relua o tablă neterminată. Doar un joc *finalizat* (o victorie sau o înfrângere) actualizează recordul pe țară descris mai sus.
+Tabla în care te afli în acest moment — fiecare pătrat pe care l-ai deschis, fiecare steag pe care l-ai plasat — este păstrată doar în memorie cât timp joci. Acest lucru este valabil în toate cele trei lumi: harta, modul Classic și Infinite Tower. Închide aplicația la mijlocul unui joc și acea tablă dispare; nu este niciodată scrisă pe disc, și nu există o salvare automată pentru a relua o tablă neterminată. Doar un joc *finalizat* (o victorie sau o înfrângere) actualizează recordul pe țară sau istoricul Classic descris mai sus.
 
 ## Singurul lucru care sună ca și cum nu ar fi local
 
@@ -44,9 +46,10 @@ GeoSweeper nu solicită nicio permisiune de sistem. Nu cere niciodată camera, b
 
 ## Achiziții
 
-GeoSweeper este gratuit de descărcat. Primele tale 10 țări — orice nivel, inclusiv Beginner — sunt gratuite de jucat, iar odată ce ai jucat o țară, aceasta rămâne rejucabilă pentru totdeauna, chiar și după ce perioada de probă gratuită este consumată. Infinite Tower este gratuit până la rândul 10. Dincolo de aceste două puncte, există două achiziții independente, ambele unice, neconsumabile și oferite prin StoreKit-ul Apple și procesate în întregime de Apple:
+GeoSweeper este gratuit de descărcat, iar fiecare dintre cele trei lumi ale sale are propria perioadă de probă gratuită. Primele tale 10 țări de pe hartă — orice nivel, inclusiv Beginner — sunt gratuite de jucat, iar odată ce ai jucat o țară, aceasta rămâne rejucabilă pentru totdeauna, chiar și după ce acea perioadă de probă este consumată. Modul Classic îți oferă 10 jocuri gratuite în același fel. Infinite Tower este gratuit până la rândul 10. Dincolo de aceste puncte, există trei achiziții independente, toate unice, neconsumabile și oferite prin StoreKit-ul Apple și procesate în întregime de Apple:
 
 - **All Countries** — o achiziție unică, neconsumabilă, care deblochează permanent nivelurile Intermediate, Expert și Mega pentru toate cele 204 țări. Nimic legat de aceasta nu se reînnoiește.
+- **Classic Lifetime** — o achiziție unică, neconsumabilă, care deblochează permanent jocuri Classic nelimitate odată ce cele 10 gratuite sunt consumate. Nimic legat de aceasta nu se reînnoiește.
 - **Infinite Tower Lifetime** — o achiziție unică, neconsumabilă, care deblochează permanent urcarea peste rândul 10. Nici aceasta nu se reînnoiește, iar GeoSweeper nu oferă niciun abonament de niciun fel.
 
 Apple, nu GeoSweeper, procesează fiecare plată. Niciun număr de card, adresă de facturare sau credențial Apple Account nu ne este vreodată vizibil — StoreKit îi spune aplicației doar ce are nevoie pentru a afișa un ecran de achiziție și pentru a acorda acces: prețul de afișat și dacă deții deja fiecare articol. Aceste răspunsuri rămân pe dispozitivul tău; GeoSweeper nu operează propriul server de achiziții și nu are unde să le trimită. Restaurarea achizițiilor îi cere Apple să reconfirme ce deține contul tău Apple și aplică răspunsul local — nu creează și nu transmite nicio înregistrare nouă.
@@ -79,7 +82,7 @@ Acest lucru corespunde etichetei "Data Not Collected" (date nu sunt colectate) p
 
 ## Păstrare și ștergere
 
-Ștergerea aplicației elimină fiecare fișier pe care l-a stocat pe dispozitivul tău — setări, recordul tău pe țară și progresul tău în Infinite Tower — imediat și complet, pentru că nu a existat niciodată o copie pe server pe care noi să o păstrăm sau să o ștergem la rândul nostru. O copie de rezervă iCloud a dispozitivului făcută înainte de ștergere poate încă conține o copie; acea copie de rezervă este în întregime sub controlul tău prin **Setări → numele tău → iCloud → Gestionează stocarea contului** de pe dispozitivul tău. E-mailurile de suport sunt păstrate și șterse separat, așa cum este descris mai sus.
+Ștergerea aplicației elimină fiecare fișier pe care l-a stocat pe dispozitivul tău — setări, recordul tău pe țară, istoricul Classic și progresul tău în Infinite Tower — imediat și complet, pentru că nu a existat niciodată o copie pe server pe care noi să o păstrăm sau să o ștergem la rândul nostru. O copie de rezervă iCloud a dispozitivului făcută înainte de ștergere poate încă conține o copie; acea copie de rezervă este în întregime sub controlul tău prin **Setări → numele tău → iCloud → Gestionează stocarea contului** de pe dispozitivul tău. E-mailurile de suport sunt păstrate și șterse separat, așa cum este descris mai sus.
 
 ## Drepturile tale
 

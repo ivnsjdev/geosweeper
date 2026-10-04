@@ -2,7 +2,7 @@
 
 **Gäller från:** 26 september 2026
 
-**Senast uppdaterad:** 26 september 2026
+**Senast uppdaterad:** 4 oktober 2026
 
 ## Kortversionen
 
@@ -30,7 +30,9 @@ SQLite-databas.
 | Visningsinställningar — brädtema, neonfärg, explosionseffekt, smällljud, kartprojektion (Globe eller Flat), ljud och haptik på/av | `UserDefaults` | Nej |
 | Språk du har valt i appen | `UserDefaults` | Nej |
 | Bokföring för betygspåminnelser — datumen då GeoSweeper har bett iOS visa den inbyggda betygsrutan, och vilken milstolpe som utlöste den senaste | `UserDefaults` | Nej |
+| Räknare för gratisspel — hur många av dina 10 gratis kartländer och 10 gratis Classic-spel du har använt | `UserDefaults` | Nej |
 | Rekord per land — vinster, förluster, bästa tid, och när du låste upp det, för varje land du har spelat | En JSON-fil (`progress.json`) i appens Application Support-mapp | Nej |
+| Classic-lägeshistorik — brädstorlek, svårighetsgrad, minantal, tid, och vinst eller förlust för varje avslutat Classic-spel | En JSON-fil (`Classic/history.json`) i appens Application Support-mapp | Nej |
 | Infinite Tower-framsteg — raden du har nått, din sparade vy, och vilka rader du har klarat | En lokal SQLite-databas | Nej |
 
 Inget av detta överförs, säljs eller delas med någon, inte heller med oss. StoreKits egen
@@ -51,10 +53,11 @@ synkronisera från.
 ## Sådant som medvetet inte sparas
 
 Brädet du håller på med — varje ruta du har öppnat, varje flagga du har placerat — finns
-bara i minnet medan du spelar. Stäng appen mitt i ett spel och det brädet är borta; det
-skrivs aldrig till disk, och det finns ingen autosparfunktion att återuppta ett oavslutat
-bräde från. Bara ett *avslutat* spel (en vinst eller en förlust) uppdaterar rekordet per
-land som beskrivs ovan.
+bara i minnet medan du spelar. Detta gäller i alla tre världarna: kartan, Classic-läget och
+Infinite Tower. Stäng appen mitt i ett spel och det brädet är borta; det skrivs aldrig till
+disk, och det finns ingen autosparfunktion att återuppta ett oavslutat bräde från. Bara ett
+*avslutat* spel (en vinst eller en förlust) uppdaterar rekordet per land eller
+Classic-historiken som beskrivs ovan.
 
 ## Det enda som låter som det inte är lokalt
 
@@ -73,14 +76,18 @@ behörighetsruta av något slag kommer någonsin att visas. Detta stämmer exakt
 
 ## Köp
 
-GeoSweeper är gratis att ladda ner. Dina första 10 länder — vilken nivå som helst, Beginner
-inräknat — är gratis att spela, och när du väl har spelat ett land förblir det spelbart för
-gott, även efter att den gratis provperioden är förbrukad. Infinite Tower är gratis upp till
-rad 10. Utöver dessa två gränser finns det två oberoende köp, båda engångsköp,
-icke-förbrukningsbara, och erbjuds genom Apples StoreKit och hanteras helt av Apple:
+GeoSweeper är gratis att ladda ner, och var och en av dess tre världar har sin egen gratis
+provperiod. Dina första 10 länder på kartan — vilken nivå som helst, Beginner inräknat — är
+gratis att spela, och när du väl har spelat ett land förblir det spelbart för gott, även
+efter att den provperioden är förbrukad. Classic-läget ger dig 10 gratis spel på samma sätt.
+Infinite Tower är gratis upp till rad 10. Utöver dessa gränser finns det tre oberoende köp,
+alla engångsköp, icke-förbrukningsbara, och erbjuds genom Apples StoreKit och hanteras helt
+av Apple:
 
 - **All Countries** — ett engångsköp, icke-förbrukningsbart, som permanent låser upp
   nivåerna Intermediate, Expert och Mega för alla 204 länder. Inget av detta förnyas.
+- **Classic Lifetime** — ett engångsköp, icke-förbrukningsbart, som permanent låser upp
+  obegränsade Classic-spel när dina 10 gratis är förbrukade. Inget av detta förnyas.
 - **Infinite Tower Lifetime** — ett engångsköp, icke-förbrukningsbart, som permanent låser
   upp möjligheten att klättra förbi rad 10. Inte heller detta förnyas, och GeoSweeper
   erbjuder ingen prenumeration av något slag.
@@ -138,8 +145,8 @@ på App Store.
 ## Bevarande och radering
 
 Att radera appen raderar varje fil den lagrat på din enhet — inställningar, ditt rekord per
-land och dina Infinite Tower-framsteg — omedelbart och fullständigt, eftersom det aldrig
-fanns en serverkopia för oss att behålla eller radera på vår sida. En iCloud-säkerhetskopia
+land, Classic-historiken och dina Infinite Tower-framsteg — omedelbart och fullständigt,
+eftersom det aldrig fanns en serverkopia för oss att behålla eller radera på vår sida. En iCloud-säkerhetskopia
 som gjorts före raderingen kan fortfarande innehålla en kopia; den säkerhetskopian står helt
 under din kontroll via **Settings → ditt namn → iCloud → Hantera lagringsutrymme för
 kontot** på din enhet. Supportmejl sparas och raderas separat, som beskrivits ovan.

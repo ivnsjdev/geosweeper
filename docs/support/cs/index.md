@@ -1,8 +1,8 @@
 # Podpora GeoSweeper
 
-**Poslední aktualizace:** 26. září 2026
+**Poslední aktualizace:** 4. října 2026
 
-GeoSweeper je klasický Hledání min hraný na deskách vyřezaných do skutečné podoby 204 zemí, plus druhý, nekonečný režim s názvem Infinite Tower. Hraje se plně offline, uchovává váš pokrok pouze na vašem zařízení a nevyžaduje žádný účet ani žádné osobní údaje – úplné podrobnosti naleznete v [Zásadách ochrany osobních údajů](../../privacy/cs/).
+GeoSweeper je klasický Hledání min hraný na deskách vyřezaných do skutečné podoby 204 zemí, plus dva další světy: režim Classic, volné Hledání min na jakékoli velikosti desky a obtížnosti, a Infinite Tower, nekonečné stoupání. Hraje se plně offline, uchovává váš pokrok pouze na vašem zařízení a nevyžaduje žádný účet ani žádné osobní údaje – úplné podrobnosti naleznete v [Zásadách ochrany osobních údajů](../../privacy/cs/).
 
 <a id="contact"></a>
 ## Kontakt
@@ -18,7 +18,7 @@ Napište na **ivnsjdev@gmail.com** a my vám odpovíme do 2–3 pracovních dnů
 
 ### Co je zahrnuto
 
-GeoSweeper má dva světy. **Globe** je 204 zemí, z nichž každá se skládá z desky Hledání min podle skutečných obrysů dané země, seskupených do čtyř úrovní podle velikosti: **Beginner**, **Intermediate**, **Expert** a **Mega**. **Infinite Tower** je druhý, samostatný svět: nekonečné stoupání, jedna řada po druhé, bez mapy. V Settings lze nastavit motiv hrací desky (**Country themes**, **Classic** nebo **Neon**), styl mapy (**Globe** nebo **Flat**), efekt výbuchu (**Shockwave**, **Embers** nebo **Chain**), zvuk výbuchu, zvuky a haptickou odezvu i jazyk zobrazení. **Your Record** zobrazuje výhry, prohry, míru výher a nejlepší časy podle úrovně a podle země. **Countries** vám umožňuje procházet a hledat každou zemi, filtrovanou podle dokončených nebo zbývajících.
+GeoSweeper má tři světy. **Globe** je 204 zemí, z nichž každá se skládá z desky Hledání min podle skutečných obrysů dané země, seskupených do čtyř úrovní podle velikosti: **Beginner**, **Intermediate**, **Expert** a **Mega**. **Classic** je druhý svět: volné Hledání min na obyčejné obdélníkové desce, kde si sami zvolíte velikost desky a jednu z pěti obtížností, od **Easy** po **Insane**, s **History** vašich dokončených her. **Infinite Tower** je třetí, samostatný svět: nekonečné stoupání, jedna řada po druhé, bez mapy. V Settings lze nastavit motiv hrací desky (**Country themes**, **Classic** nebo **Neon**), styl mapy (**Globe** nebo **Flat**), efekt výbuchu (**Shockwave**, **Embers** nebo **Chain**), zvuk výbuchu, zvuky a haptickou odezvu i jazyk zobrazení. **Your Record** zobrazuje výhry, prohry, míru výher a nejlepší časy podle úrovně a podle země. **Countries** vám umožňuje procházet a hledat každou zemi, filtrovanou podle dokončených nebo zbývajících.
 
 ### Zařízení a orientace
 
@@ -26,11 +26,15 @@ GeoSweeper potřebuje iOS 17 nebo novější a běží na iPhone a iPadu na vý�
 
 ### Kolik to stojí?
 
-Prvních 10 zemí, ve kterých hrajete, z jakékoli úrovně včetně Beginner, je zdarma – a jakmile si zahrajete zemi, zůstane hratelná navždy, dokonce i po uplynutí této bezplatné zkušební verze. Prvních 10 řádků Infinite Tower je také volných. Vše nad rámec těchto dvou bodů je samostatný, jednorázový nákup – nic v GeoSweeper se neobnovuje ani neúčtuje automaticky a nic, co jste si nekoupili, není nikdy účtováno bez předchozího potvrzení nákupu od společnosti Apple.
+Každý ze tří světů má vlastní bezplatnou zkušební verzi. Prvních 10 zemí, ve kterých hrajete, z jakékoli úrovně včetně Beginner, je zdarma – a jakmile si zahrajete zemi, zůstane hratelná navždy, dokonce i po uplynutí této zkušební verze. Režim Classic vám stejným způsobem dává 10 her zdarma. Prvních 10 řádků Infinite Tower je také volných. Vše nad rámec těchto bodů je samostatný, jednorázový nákup – nic v GeoSweeper se neobnovuje ani neúčtuje automaticky a nic, co jste si nekoupili, není nikdy účtováno bez předchozího potvrzení nákupu od společnosti Apple.
 
 ### Odemknutí zbytku mapy
 
 **All Countries** je jediný jednorázový nákup, který trvale odemkne úrovně Intermediate, Expert a Mega pro každou zemi. Neobnovuje se a není předplatným – koupíte jej jednou a je vaše.
+
+### Odemknutí režimu Classic
+
+**Classic Lifetime** je jediný jednorázový nákup, který trvale odemkne neomezené hry Classic, jakmile vyčerpáte svých 10 her zdarma. Neobnovuje se a není předplatným – koupíte jej jednou a je vaše.
 
 ### Odblokování Infinite Tower
 
@@ -60,13 +64,17 @@ GeoSweeper má věkové hodnocení pro běžné publikum. V aplikaci není žád
 
 Deska každé země je generována z jejího skutečného obrysu – dlaždice existují pouze tam, kde je pevnina, pobřeží ohýbají desku a nejmenší ostrůvky jsou již otevřené jako scenérie. Úroveň (Beginner, Intermediate, Expert nebo Mega) je nastavena podle velikosti země, nikoli vámi zvolenou. Téměř každá hrací plocha je zkontrolována řešitelem, takže ji lze vyčistit pouze logikou a vaše první klepnutí vždy otevře na bezpečnou půdu – mina pod ní nikdy nečeká.
 
+### Jak funguje režim Classic
+
+Classic je obyčejné Hledání min, hrané po vašem. Sami nastavíte šířku a výšku desky a vyberete jednu z pěti obtížností – **Easy**, **Medium**, **Hard**, **Expert** nebo **Insane** – která určuje, jak hustě je deska zaminovaná. Stejně jako na mapě je každá deska sestavena tak, aby ji bylo možné vyřešit pouze logikou, a vaše první klepnutí vždy otevře na bezpečnou půdu. **History** uchovává velikost, obtížnost, čas a výsledek každé dokončené hry, uložené pouze ve vašem zařízení. Prvních 10 her Classic je zdarma; poté **Classic Lifetime** odemkne neomezené hraní.
+
 ### Jak Infinite Tower vlastně funguje
 
 Otevřete každou bezpečnou destičku v řadě, abyste odemkli řadu výše; trefit minu a ta řada začíná znovu. Od řady 100 nahoru vás zásah do miny také srazí o několik řad zpět dolů, nejen na vrchol aktuálního řádku – to je zde uvedeno, protože je snadné minout, dokud se to nestane. Hustota dolu se zvyšuje, čím výše stoupáte. Váš řádek, zobrazovaná oblast a vymazané řádky se ukládají po každém řádku, takže zavření aplikace vás nikdy nebude stát pokrok, který jste již nastavili.
 
 ### Kam šla data
 
-Deska, kterou aktivně řešíte – každá destička a vlajka – existuje pouze v paměti, když jste na ní. Zavřete aplikaci uprostřed desky a tato deska je navždy pryč; do vašeho záznamu se uloží pouze dokončená výhra nebo prohra. Designově neexistuje žádné vrácení a žádné automatické ukládání střední desky.
+Deska, kterou aktivně řešíte – každá destička a vlajka – existuje pouze v paměti, když jste na ní, ve všech třech světech. Zavřete aplikaci uprostřed desky a tato deska je navždy pryč; do vašeho záznamu nebo historie Classic se uloží pouze dokončená výhra nebo prohra. Designově neexistuje žádné vrácení a žádné automatické ukládání střední desky.
 
 ### Settings a dostupnost
 
@@ -74,7 +82,7 @@ Zvuk a haptika mají v Settings každý svůj vlastní přepínač, nezávislý 
 
 ### Přeinstalace a ztráta dat
 
-Smazáním GeoSweeper smažete z tohoto zařízení vaše nastavení, váš záznam pro zemi a váš pokrok v Infinite Tower – neexistuje žádná kopie serveru, kterou by bylo možné později obnovit. Výjimkou jsou nákupy: jsou svázány s vaším Apple Account a vrátí se s **Restore Purchases** na libovolném zařízení, které je k němu přihlášeno, bez ohledu na to, zda je znovu nainstalováno nebo ne.
+Smazáním GeoSweeper smažete z tohoto zařízení vaše nastavení, váš záznam pro zemi, vaši historii režimu Classic a váš pokrok v Infinite Tower – neexistuje žádná kopie serveru, kterou by bylo možné později obnovit. Výjimkou jsou nákupy: jsou svázány s vaším Apple Account a vrátí se s **Restore Purchases** na libovolném zařízení, které je k němu přihlášeno, bez ohledu na to, zda je znovu nainstalováno nebo ne.
 
 ## Chyby a požadavky na funkce
 

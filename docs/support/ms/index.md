@@ -1,8 +1,8 @@
 # Sokongan GeoSweeper
 
-**Terakhir dikemas kini:** 26 September 2026
+**Terakhir dikemas kini:** 4 Oktober 2026
 
-GeoSweeper ialah Penyapu ranjau klasik yang dimainkan pada papan yang dipotong mengikut bentuk sebenar 204 negara, ditambah dengan mod kedua tanpa penghujung yang dipanggil Infinite Tower. Ia dimainkan sepenuhnya di luar talian, mengekalkan kemajuan anda hanya pada peranti anda dan tidak meminta akaun dan tiada maklumat peribadi — lihat [Dasar Privasi](../../privacy/ms/) untuk butiran penuh.
+GeoSweeper ialah Penyapu ranjau klasik yang dimainkan pada papan yang dipotong mengikut bentuk sebenar 204 negara, ditambah dua lagi dunia: mod Classic, Penyapu Ranjau bebas pada mana-mana saiz papan dan kesukaran, dan Infinite Tower, pendakian tanpa penghujung. Ia dimainkan sepenuhnya di luar talian, mengekalkan kemajuan anda hanya pada peranti anda dan tidak meminta akaun dan tiada maklumat peribadi — lihat [Dasar Privasi](../../privacy/ms/) untuk butiran penuh.
 
 <a id="contact"></a>
 ## Hubungi
@@ -18,7 +18,7 @@ Tulis kepada **ivnsjdev@gmail.com** dan kami akan membalas dalam masa 2–3 hari
 
 ### Apa yang disertakan
 
-GeoSweeper mempunyai dua dunia. **Globe** ialah 204 negara, setiap satu papan Penyapu Ranjau dipotong mengikut garis besar negara itu, dikumpulkan kepada empat peringkat berdasarkan saiz: **Beginner**, **Intermediate**, **Expert** dan **Mega**. **Infinite Tower** ialah dunia kedua yang berasingan: pendakian yang tidak berkesudahan, satu baris pada satu masa, tanpa peta. Dalam Settings, anda boleh memilih tema papan (**Country themes**, **Classic** atau **Neon**), gaya peta (**Globe** atau **Flat**), kesan letupan (**Shockwave**, **Embers** atau **Chain**), bunyi letupan, bunyi dan maklum balas haptik serta bahasa paparan anda. **Your Record** menunjukkan kemenangan, kekalahan, kadar kemenangan dan masa terbaik, mengikut peringkat dan negara. **Countries** membolehkan anda menyemak imbas dan mencari setiap negara, ditapis mengikut lengkap atau yang tinggal.
+GeoSweeper mempunyai tiga dunia. **Globe** ialah 204 negara, setiap satu papan Penyapu Ranjau dipotong mengikut garis besar negara itu, dikumpulkan kepada empat peringkat berdasarkan saiz: **Beginner**, **Intermediate**, **Expert** dan **Mega**. **Classic** ialah dunia kedua: Penyapu Ranjau bebas pada papan segi empat tepat biasa, di mana anda memilih sendiri saiz papan dan salah satu daripada lima kesukaran, **Easy** hingga **Insane**, dengan **History** permainan yang telah anda selesaikan. **Infinite Tower** ialah dunia ketiga yang berasingan: pendakian yang tidak berkesudahan, satu baris pada satu masa, tanpa peta. Dalam Settings, anda boleh memilih tema papan (**Country themes**, **Classic** atau **Neon**), gaya peta (**Globe** atau **Flat**), kesan letupan (**Shockwave**, **Embers** atau **Chain**), bunyi letupan, bunyi dan maklum balas haptik serta bahasa paparan anda. **Your Record** menunjukkan kemenangan, kekalahan, kadar kemenangan dan masa terbaik, mengikut peringkat dan negara. **Countries** membolehkan anda menyemak imbas dan mencari setiap negara, ditapis mengikut lengkap atau yang tinggal.
 
 ### Peranti dan orientasi
 
@@ -26,11 +26,15 @@ GeoSweeper memerlukan iOS 17 atau lebih baru dan berjalan pada iPhone dan iPad, 
 
 ### Berapakah kosnya?
 
-10 negara pertama yang anda mainkan, daripada mana-mana peringkat termasuk Beginner, adalah percuma — dan sebaik sahaja anda bermain sesebuah negara, negara itu kekal boleh dimainkan semula untuk selama-lamanya, walaupun selepas percubaan percuma itu dibelanjakan. 10 baris pertama Infinite Tower adalah percuma juga. Segala-galanya di luar dua mata tersebut adalah pembelian sekali sahaja yang berasingan — tiada dalam GeoSweeper yang diperbaharui atau dibilkan secara automatik, dan tiada apa yang anda belum beli pernah dibilkan tanpa pengesahan pembelian daripada Apple terlebih dahulu.
+Setiap satu daripada tiga dunia mempunyai percubaan percuma tersendiri. 10 negara pertama yang anda mainkan, daripada mana-mana peringkat termasuk Beginner, adalah percuma — dan sebaik sahaja anda bermain sesebuah negara, negara itu kekal boleh dimainkan semula untuk selama-lamanya, walaupun selepas percubaan itu dibelanjakan. Mod Classic memberi anda 10 permainan percuma dengan cara yang sama. 10 baris pertama Infinite Tower adalah percuma juga. Segala-galanya di luar titik-titik tersebut adalah pembelian sekali sahaja yang berasingan — tiada dalam GeoSweeper yang diperbaharui atau dibilkan secara automatik, dan tiada apa yang anda belum beli pernah dibilkan tanpa pengesahan pembelian daripada Apple terlebih dahulu.
 
 ### Membuka kunci seluruh peta
 
 **All Countries** ialah pembelian sekali sahaja yang membuka kunci peringkat Intermediate, Expert dan Mega secara kekal untuk setiap negara. Ia tidak memperbaharui dan bukan langganan — anda membelinya sekali dan ia adalah milik anda.
+
+### Membuka kunci mod Classic
+
+**Classic Lifetime** ialah pembelian sekali sahaja yang membuka kunci permainan Classic tanpa had secara kekal sebaik sahaja 10 permainan percuma anda dibelanjakan. Ia tidak memperbaharui dan bukan langganan — anda membelinya sekali dan ia adalah milik anda.
 
 ### Membuka kunci Infinite Tower
 
@@ -60,13 +64,17 @@ GeoSweeper membawa penilaian umur khalayak umum. Tiada sembang, tiada perkongsia
 
 Papan setiap negara dijana daripada garis besarnya yang sebenar — jubin hanya wujud di tempat yang ada, garis pantai membengkokkan papan dan pulau terkecil sudah terbuka sebagai pemandangan. Peringkat (Beginner, Intermediate, Expert atau Mega) ditetapkan mengikut saiz negara, bukan pilihan anda. Hampir setiap papan disemak oleh penyelesai supaya ia boleh dibersihkan dengan logik sahaja, dan ketikan pertama anda sentiasa terbuka ke tanah yang selamat — lombong tidak pernah menunggu di bawahnya.
 
+### Bagaimana mod Classic berfungsi
+
+Classic ialah Penyapu Ranjau biasa, dimainkan mengikut cara anda. Anda menetapkan sendiri lebar dan tinggi papan dan memilih salah satu daripada lima kesukaran — **Easy**, **Medium**, **Hard**, **Expert** atau **Insane** — yang menetapkan betapa padatnya papan itu dilombong. Seperti pada peta, setiap papan dibina untuk boleh dibersihkan dengan logik sahaja dan ketikan pertama anda sentiasa terbuka ke tanah yang selamat. **History** menyimpan saiz, kesukaran, masa dan keputusan setiap permainan yang selesai, disimpan hanya pada peranti anda. 10 permainan Classic pertama anda adalah percuma; **Classic Lifetime** membuka kunci permainan tanpa had selepas itu.
+
 ### Bagaimana Infinite Tower sebenarnya berfungsi
 
 Buka setiap jubin selamat berturut-turut untuk membuka kunci baris di atas; terkena lombong dan baris itu bermula semula. Dari baris 100 ke atas, memukul lombong juga akan menjatuhkan anda kembali beberapa baris, bukan hanya ke bahagian atas baris semasa — ini didedahkan di sini kerana ia mudah terlepas sehingga ia berlaku. Ketumpatan lombong meningkat semakin tinggi anda mendaki. Baris, ruang pandang dan baris anda yang dikosongkan disimpan selepas setiap baris, jadi menutup apl tidak akan menyebabkan anda mengalami kemajuan yang telah anda simpan.
 
 ### Ke mana data pergi
 
-Papan yang anda sedang aktifkan — setiap jubin dan bendera — hanya wujud dalam ingatan semasa anda menggunakannya. Tutup apl di tengah papan dan papan itu hilang untuk selamanya; hanya menang atau kalah selesai disimpan ke rekod anda. Tiada buat asal dan tiada autosimpan papan tengah mengikut reka bentuk.
+Papan yang anda sedang aktifkan — setiap jubin dan bendera — hanya wujud dalam ingatan semasa anda menggunakannya, dalam ketiga-tiga dunia. Tutup apl di tengah papan dan papan itu hilang untuk selamanya; hanya menang atau kalah selesai disimpan ke rekod anda atau sejarah Classic. Tiada buat asal dan tiada autosimpan papan tengah mengikut reka bentuk.
 
 ### Settings dan kebolehaksesan
 
@@ -74,7 +82,7 @@ Bunyi dan haptik masing-masing mempunyai suis mereka sendiri dalam Settings, beb
 
 ### Memasang semula dan kehilangan data
 
-Memadamkan GeoSweeper akan memadamkan tetapan anda, rekod setiap negara anda dan kemajuan Infinite Tower anda daripada peranti itu — tiada salinan pelayan untuk dipulihkan selepas itu. Pembelian adalah pengecualian: mereka terikat dengan Apple Account anda dan kembali dengan **Restore Purchases** pada mana-mana peranti yang dilog masuk ke dalamnya, pasang semula atau tidak.
+Memadamkan GeoSweeper akan memadamkan tetapan anda, rekod setiap negara anda, sejarah mod Classic anda dan kemajuan Infinite Tower anda daripada peranti itu — tiada salinan pelayan untuk dipulihkan selepas itu. Pembelian adalah pengecualian: mereka terikat dengan Apple Account anda dan kembali dengan **Restore Purchases** pada mana-mana peranti yang dilog masuk ke dalamnya, pasang semula atau tidak.
 
 ## Pepijat dan permintaan ciri
 

@@ -2,7 +2,7 @@
 
 **Effective date:** 26 September 2026
 
-**Last updated:** 26 September 2026
+**Last updated:** 4 October 2026
 
 ## The short version
 
@@ -30,7 +30,9 @@ SQLite database.
 | Display settings — board theme, neon color, explosion effect, blast sound, map projection (globe or flat), sound and haptics on/off | `UserDefaults` | No |
 | Language you've chosen inside the app | `UserDefaults` | No |
 | Rating-prompt bookkeeping — the dates GeoSweeper has asked iOS to show the native rating sheet, and which milestone triggered the last one | `UserDefaults` | No |
+| Free-games counters — how many of your 10 free map countries and 10 free Classic games you've used | `UserDefaults` | No |
 | Per-country record — wins, losses, best time, and when you unlocked it, for every country you've played | A JSON file (`progress.json`) in the app's Application Support folder | No |
+| Classic mode history — the board size, difficulty, mine count, time, and win-or-loss of every finished Classic game | A JSON file (`Classic/history.json`) in the app's Application Support folder | No |
 | Infinite Tower progress — the row you've reached, your saved viewport, and which rows you've cleared | A local SQLite database | No |
 
 None of this is transmitted, sold, or shared with anyone, including us. StoreKit's own
@@ -50,9 +52,10 @@ fresh there, because there is no server copy anywhere to sync from.
 ## Anything deliberately not persisted
 
 The board you're in the middle of — every tile you've opened, every flag you've placed — is
-held only in memory while you play. Close the app mid-game and that board is gone; it is
-never written to disk, and there is no autosave to resume an unfinished board from. Only a
-*finished* game (a win or a loss) updates the per-country record described above.
+held only in memory while you play. This is true in all three worlds: the map, Classic mode,
+and Infinite Tower. Close the app mid-game and that board is gone; it is never written to
+disk, and there is no autosave to resume an unfinished board from. Only a *finished* game (a
+win or a loss) updates the per-country record or the Classic history described above.
 
 ## The one thing that sounds like it isn't local
 
@@ -71,14 +74,17 @@ app's `Info.plist` exactly: there is not a single usage-description entry in it.
 
 ## Purchases
 
-GeoSweeper is free to download. Your first 10 countries — any tier, Beginner included — are
-free to play, and once you've played a country it stays replayable for good, even after
-that free trial is spent. Infinite Tower is free up to row 10. Beyond those two points,
-there are two independent purchases, both one-time, non-consumable, and offered through
-Apple's StoreKit and processed entirely by Apple:
+GeoSweeper is free to download, and each of its three worlds has its own free trial. Your
+first 10 countries on the map — any tier, Beginner included — are free to play, and once
+you've played a country it stays replayable for good, even after that trial is spent.
+Classic mode gives you 10 free games the same way. Infinite Tower is free up to row 10.
+Beyond those points, there are three independent purchases, all one-time, non-consumable,
+and offered through Apple's StoreKit and processed entirely by Apple:
 
 - **All Countries** — a one-time, non-consumable purchase that permanently unlocks the
   Intermediate, Expert, and Mega tiers across all 204 countries. Nothing about this renews.
+- **Classic Lifetime** — a one-time, non-consumable purchase that permanently unlocks
+  unlimited Classic games once your 10 free ones are spent. Nothing about this renews.
 - **Infinite Tower Lifetime** — a one-time, non-consumable purchase that permanently unlocks
   climbing past row 10. Nothing about this renews either, and GeoSweeper offers no
   subscription of any kind.
@@ -134,9 +140,9 @@ This matches the "Data Not Collected" label GeoSweeper carries on the App Store.
 ## Retention and deletion
 
 Deleting the app deletes every file it stored on your device — settings, your per-country
-record, and your Infinite Tower progress — immediately and completely, because there was
-never a server copy for us to hold onto or to delete on our end. An iCloud device backup
-made before deletion may still contain a copy; that backup is entirely under your control
+record, Classic history, and Infinite Tower progress — immediately and completely, because
+there was never a server copy for us to hold onto or to delete on our end. An iCloud device
+backup made before deletion may still contain a copy; that backup is entirely under your control
 through **Settings → your name → iCloud → Manage Account Storage** on your device. Support
 emails are retained and deleted separately, as described above.
 
